@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.container {
+    width: 901 px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: PlayfairDisplay;
+    color: #989898;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.navigation li{
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    margin-right: 105px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    
+    
+}
+
+h3 {
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+
+  .page-footer {
+      font-size: 20px;
+      line-height: 24px;
+      width: 164px;
+      height: 60px;
+      border-width: 1px;
+      outline: none; 
+  }
+
+.page-footer:hover {
+    background-color: rgb(98,98,98);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.features-list {
+    width: 421px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-right: 61px;
+    float: left;
+
+
+}
+
