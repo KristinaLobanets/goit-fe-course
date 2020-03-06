@@ -9,11 +9,6 @@ html {
 }
 
 
-.container {
-    width: 901 px;
-    margin: 0 auto;
-}
-
 
 body {
     font-family: PlayfairDisplay;
@@ -36,7 +31,6 @@ h2 {
     font-size: 40px;
     line-height: 48px;
     
-    
 }
 
 h3 {
@@ -47,7 +41,7 @@ h3 {
 }
 
 
-  .page-footer {
+.page-footer {
       font-size: 20px;
       line-height: 24px;
       width: 164px;
@@ -72,8 +66,6 @@ img {
     margin: 0;
     display: inline-block;
     margin-right: 61px;
-    float: left;
-
+    
 
 }
-
