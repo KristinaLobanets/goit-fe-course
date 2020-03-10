@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -7,15 +8,19 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
-
-
+  
 body {
     font-family: PlayfairDisplay;
     color: #989898;
     font-size: 19px;
     line-height: 23px;
     margin: 0;
+}
+
+.container {
+    width: 990 px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .navigation li{
@@ -25,6 +30,8 @@ body {
     list-style: none;
     display: inline-block;
     margin-right: 105px;
+    margin-bottom: 35px;
+    margin-top: 15px;
 }
 
 h2 {
@@ -36,10 +43,8 @@ h2 {
 h3 {
     font-size: 19px;
     line-height: 23px;
-    text-transform: uppercase;
-    list-style: none;
+    
 }
-
 
 .page-footer {
       font-size: 20px;
@@ -49,6 +54,12 @@ h3 {
       border-width: 1px;
       outline: none; 
   }
+
+  .footer {
+      margin: 0 auto;
+      padding: 0 auto;
+  }
+
 
 .page-footer:hover {
     background-color: rgb(98,98,98);
@@ -61,11 +72,18 @@ img {
 }
 
 .features-list {
-    width: 421px;
     padding: 0;
     margin: 0;
-    display: inline-block;
-    margin-right: 61px;
-    
+    list-style: none;
 
 }
+
+.features-list-item {
+    display: inline-block;
+    width: 421px;
+    margin-right: 61px;
+    margin-bottom: 15px;
+}
+
+
+
