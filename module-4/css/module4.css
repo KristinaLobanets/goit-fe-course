@@ -1,0 +1,166 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+
+.clearfix:: after {
+    display: table;
+    content: ;
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+    color: black;
+} 
+
+.logo {
+    font-size: 40px;
+    list-style: none;
+    margin-right: 530px;
+}
+
+
+.navigation {
+    float: right;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    list-style: none;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li {
+    margin-right: 30px;
+}
+
+
+.navigation a {
+    display: block;
+    color: black;
+    font-weight: ;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: ;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: rgb{26,188,156);
+}
+
+.features {
+margin-bottom: 30px;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features-list-item {
+    float: left;
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.features-list-item :nth-child(4n) {
+    margin-right: 0;
+}
+
+.features-list-item (n+4) {
+    margin-bottom: 0;
+}
+
+.features-list-item p {
+    margin-bottom: 24px;
+    margin-top: 0;
+    color: black;
+    line-height: 17px;
+    font-size: 24px;
+}
+
+
+
+.name {
+font-size: 64px;
+font-family: ;
+}
+
+.news {
+    margin-bottom: 120px; 
+}
+
+.news-else {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-block {
+    width: 350px;
+    margin-right: 30px;
+}
+
+.news-block :last-child {
+    margin-right: 0;
+}
+
+.news-block h3 {
+font-size: 24px;
+}
+
+h4 {
+font-size: 19px;
+}
+
+button{
+
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.page-footer {
+    font-size: 20px;
+    line-height: 24px;
+    width: 160px;
+    height: 51px;
+    border-width: 1px;
+    outline: none; 
+    background-color: rgb(26,188,156);
+}
+
+.page-footer:hover {
+  background-color: rgb(26,188,156);
+}
+
+background-color: rgb(233,240,253);
+
