@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 990px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -78,6 +78,7 @@ body {
 
 }
 
+
 .category {
     font: 300 14px 'Ubuntu', sans-serif;
     text-transform: uppercase;
@@ -126,7 +127,7 @@ img {
 
 }
 
-.features-list-item:nth-child(ever) {
+.features-list-item:nth-child(even) {
     margin-right: 0;
 }
 
