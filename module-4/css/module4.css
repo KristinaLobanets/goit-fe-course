@@ -9,6 +9,10 @@ html{
     box-sizing: inherit;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 .clearfix:: after {
     display: table;
     content: ;
@@ -32,34 +36,28 @@ img {
     padding: 0 auto;
 }
 .page-header {
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     background-color: aquamarine;
 }
 
-.logo {
-    font-size: 40px;
-    list-style: none;
-    float: left;
-}
-//*.navigation {
-    float: right;
+
+.navigation {
     width: 600px;
     margin: 0;
     padding: 0;
     font-size: 19px;
     list-style: none;
+    
 }
 
 .navigation li {
-    float: left;
+    display: inline-block;
+    width: calc(100%-100px);
+    text-align: right;
+    margin: 30 px;
 }
 
-.navigation li {
-    margin-right: 30px;
-}
-
-
-.navigation a {
+//*.navigation a {
     display: block;
     color: black;
     font-weight: ;
@@ -72,8 +70,18 @@ img {
 .navigation a:focus {
     color: rgb{26,188,156);
 }
+
 */
-.features {
+
+.logo {
+    font-size: 40px;
+    list-style: none;
+    float: left;
+    width: 90px;
+    display: inline-block;
+}
+
+ .features {
 margin-bottom: 30px;
 }
 
@@ -180,6 +188,7 @@ margin-bottom: 30px;
     font-size: 64px;
     font-family: ;
     text-align: center;
+    text-transform: uppercase;
     }
     
     
