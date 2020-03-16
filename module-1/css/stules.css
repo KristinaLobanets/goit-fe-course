@@ -7,6 +7,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0 ;
+    padding: 0;
 }
 
 html {
@@ -22,47 +24,71 @@ body {
 }
 
 .container {
-    width: 990 px;
+    width: 900px;
     margin: 0 auto;
-    padding: 0 auto;
 }
 
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .navigation {
+    margin: 0 auto;
+    width: 900px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
 .navigation li{
+    display: inline-block;
     font-size: 19px;
     line-height: 23px;
     text-transform: uppercase;
     list-style: none;
-    display: inline-block;
-    margin-right: 105px;
-    margin-bottom: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
     margin-top: 15px;
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 38px;
     
 }
 
 p {
     font-size: 19px;
     line-height: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     
 }
 
 .page-footer {
+    display: block;
       font-size: 20px;
       line-height: 24px;
       width: 164px;
       height: 60px;
       border-width: 1px;
       outline: none; 
+      margin: auto;
+      padding: 0;
+      margin-bottom: 70px;
   }
 
-  .footer {
-      margin: 0 auto;
-      padding: 0 auto;
-  }
 
 
 .page-footer:hover {
@@ -76,17 +102,18 @@ img {
 }
 
 .features-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    font-size: 0;
+    padding-bottom: 70px;
 
 }
 
 .features-list-item {
     display: inline-block;
-    width: 421px;
-    margin-right: 61px;
-    margin-bottom: 15px;
+    width: 400px;
+    margin-bottom: 130px;
+vertical-align: top;
+margin-right: 50px;
+
 }
 
 
