@@ -74,6 +74,7 @@ body {
 
     font-size: 27px;
     line-height: 33px;
+    margin-bottom: 35px;
 
 }
 
@@ -81,6 +82,8 @@ body {
     font: 300 14px 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .page-footer {
@@ -118,6 +121,8 @@ img {
     width: 420px;
    margin-right: 60px;
    font-size: 14px;
+   margin-bottom: 130px;
+
 
 }
 
