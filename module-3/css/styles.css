@@ -104,6 +104,7 @@ body {
 
 .page-footer:hover {
     background-color: rgb(98,98,98);
+    color: white;
 }
 
 img {
