@@ -19,7 +19,7 @@ body, .p, button {
     color: #626262;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1;
 }
 
 .clearfix::after {
@@ -59,6 +59,10 @@ body {
     width: 1110px;
 }
 
+.navigation {
+    float: right;
+}
+
 .navigation li{
     font-size: 12px;
     line-height: 14px;
@@ -66,8 +70,8 @@ body {
     list-style: none;
     margin-right: 30px;
     font-family: OpenSans Bold, sans-serif;
-    float: right;
-    margin-bottom: 100px;
+    float: left;
+    margin-bottom: 30px;
     margin-top: 43px;
 }
 
@@ -87,7 +91,7 @@ body {
     font-family: Roboto,  sans-serif;
     text-transform: uppercase;
     margin-top: 39px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     margin-top: 43px;
 }
 
@@ -115,81 +119,32 @@ margin-bottom: 30px;
     width: 255px;
     margin-right: 10px;
     margin-bottom: 30px;
-    padding: 0 10px;
+   
     text-align: center;
+    background-color: #e9f0fd;
+    height:283px ;
+    
 }
-
-.features-list-item::before {
-    content:'';
-    display: block;
-    height: 284px;
-    width: 255px;
-    margin-bottom: 0px;
-    background-color: rgb(233,240,253);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.product1::before {
-    background-image: url('../product/product1.png');
-}
-
-.produkt2::before {
-    background-image: url('../product/product2.png');
-}
-
-.produkt3::before {
-    background-image: url('../product/product3.png');
-}
-
-.produkt4::before {
-    background-image: url('../product/product4.png');
-}
-
-.produkt5::before {
-    background-image: url('../product/product5.png');
-}
-
-.produkt6::before {
-    background-image: url('../product/product6.png');
-}
-
-.produkt7::before {
-    background-image: url('../product/product7.png');
-}
-
-.produkt8::before {
-    background-image: url('../product/product8.png');
-}
-
 
 .features-list-item :nth-child(4n) {
     margin-right: 0;
 }
 
-div {
-    width: 255px;
+.features-list-div {
     margin-top: 0;
-    margin-right: 0;
+   display: inline-block;
+    background-color: rgb(50,50,50);
+    
 }
 
-.position h3 {
-    margin-top: 0;
-    margin-right: 0;
-
-}
-
-.features-list-item p {
+.features-list-item span {
     margin-bottom: 0px;
     margin-top: 0;
     color: white;
-    line-height: 17px;
+    line-height: 27px;
     font-size: 24px;
-    display: inline-block;
-    background-color: rgb(140,140,140);
-    width: 50px;
-    height: 40px;
-    
+    background-color: rgb(140,140,140); 
+    float: right;
 }
 
 .features-list-item h3:hover {
@@ -202,12 +157,11 @@ div {
 
 
 .features-list-item h3 {
-    display: inline-block;
-    background-color: rgb(50,50,50);
     color: white;
-    width: 200px;
-    height: 40px;
     margin-top: 0px;
+    font-size: 24px;
+    line-height: 27px;
+    float: left;
 
 }
 .name {
@@ -280,6 +234,6 @@ div {
     }
     
     
-h3 {
+.news-name  {
     margin-bottom: 50px;
 }
