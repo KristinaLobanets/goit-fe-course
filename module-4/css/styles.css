@@ -119,7 +119,6 @@ margin-bottom: 30px;
     width: 255px;
     margin-right: 10px;
     margin-bottom: 30px;
-   
     text-align: center;
     background-color: #e9f0fd;
     height:283px ;
@@ -134,24 +133,25 @@ margin-bottom: 30px;
     margin-top: 0;
    display: inline-block;
     background-color: rgb(50,50,50);
-    
+    line-height: 40px;
 }
 
 .features-list-item span {
     margin-bottom: 0px;
     margin-top: 0;
     color: white;
-    line-height: 27px;
     font-size: 24px;
     background-color: rgb(140,140,140); 
     float: right;
+    display: inline-block;
+    width: 50px;
 }
 
 .features-list-item h3:hover {
     background-color: rgb(26,188,156);
 }
 
-.features-list-item p:hover {
+.features-list-item .prise:hover {
     background-color: rgb(127,217,199);
 }
 
@@ -206,34 +206,38 @@ margin-bottom: 30px;
     
     .news-block h3 {
     font-size: 24px;
+    margin-bottom: 30px;
     }
     
     h4 {
     font-size: 19px;
     margin-bottom: 20px;
     }
+
+    .news-name  h3 {
+        margin-bottom: 50px;
+    }
     
-    button{
-    
+    .news-txt p{
+        margin-bottom: 30px;
     }
     
     .footer {
         margin: 0 auto;
-        padding: 0 auto;
+        
     }
     
     .page-footer {
         font-size: 20px;
         line-height: 24px;
-        width: 160px;
-        height: 51px;
+       padding: 15px 25px;
         border-width: 1px;
         outline: none; 
         background-color: rgb(26,188,156);
         color: white;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     
     
-.news-name  {
-    margin-bottom: 50px;
-}
