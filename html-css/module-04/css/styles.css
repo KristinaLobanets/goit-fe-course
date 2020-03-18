@@ -14,12 +14,13 @@ html {
     box-sizing: border-box;
 }
   
-body, .p, button {
-    font-family: roboto;
+body, .p, h3 {
+    font-family: "roboto";
     color: #626262;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -98,13 +99,13 @@ body {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 0 auto;
     margin-bottom: 20px;
+    width: 0 auto;
 }
 
 
  .features {
-margin-bottom: 30px;
 }
 
 .features-list {
@@ -117,12 +118,12 @@ margin-bottom: 30px;
 .features-list-item {
     float: left;
     width: 255px;
+    height: 323px;
     margin-right: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: center;
     background-color: #e9f0fd;
-    height:283px ;
-    
+
 }
 
 .features-list-item :nth-child(4n) {
