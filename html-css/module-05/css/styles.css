@@ -15,14 +15,6 @@ html {
     background-color: #e9f0fd;
 }
   
-body, .p, h3 {
-    font-family: "roboto";
-    color: #626262;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-}
 
 .clearfix::after {
     display: table;
@@ -104,30 +96,41 @@ img {
     height: auto;
 }
 
-.title-img {
-    position: absolute;
-    z-index: -1;
+.title {
+    background-image: url("../slide4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    margin-top: 100px;
+    padding-top: 38px;
+    padding-bottom: 260px;
 }
 
-.title {
-margin-bottom: 30px;
-}
+  
 
 .title-txt-1{
 color: white;
 text-transform: uppercase;
 text-align: center;
+font-size: 60px;
+font-family: "Roboto",  sans-serif;
+font-weight: 900;
+
 }
 
 .title-txt-2 {
 color: white;
 text-transform: uppercase;
 text-align: center;
+font-size: 24px;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
 }
 
 .name {
     font-size: 64px;
-    font-family: roboto, sans-serif;
+    font-family: "roboto", sans-serif;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 130px;
@@ -168,13 +171,16 @@ text-align: center;
   }
 
   .features-list-item span {
-    margin-bottom: 0px;
+
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     background-color: rgb(140,140,140); 
     float: right;
     display: inline-block;
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    padding: 5px 5px;
+    line-height: 22px;
 }
 
 .features-list-item h3:hover {
@@ -189,6 +195,10 @@ text-align: center;
 .features-list-item h3 {
     color: white;
     margin-top: 0px;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 22px;
     display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    padding: 5px 5px;
+}
