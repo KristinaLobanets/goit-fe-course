@@ -17,7 +17,6 @@ html {
 body, .p, h3 {
     font-family: "roboto", sans-serif;
     color: #626262;
-    text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -86,7 +85,7 @@ body {
     list-style: none;
     float: left;
     width: 90px;
-    font-family: Roboto,  sans-serif;
+    font-family: "Roboto",  sans-serif;
     text-transform: uppercase;
     margin-top: 39px;
     margin-bottom: 30px;
@@ -134,9 +133,10 @@ img {
     display: inline-block;
     padding: 5px 5px;
     line-height: 22px;
+    text-transform: uppercase;
 }
 
-.features-list-item h3:hover {
+.features-list-div:hover {
     background-color: rgb(26,188,156);
 }
 
@@ -151,6 +151,7 @@ img {
     float: left;
     padding: 5px 5px;
     line-height: 22px;
+    text-transform: uppercase;
 
 }
 .name {
@@ -200,15 +201,29 @@ img {
     
     h4 {
     font-size: 19px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     }
 
-    .news-name  h3 {
+    .news-name  {
         margin-bottom: 50px;
+        font-family: "OpenSans", sans-serif;
+        font-size: 18px ;
     }
-    
-    .news-txt p{
-        margin-bottom: 30px;
+
+    .news-txt::before {
+        display: block;
+        content: "";
+        width: 130px;
+        height: 4px;
+        background-color:  rgb(26,188,156);
+        margin-top: 10px;
+    }
+
+    .news-txt {
+        font-family: "OpenSans", sans-serif;
+        font-size: 14px;
+        margin-bottom: 0px;
+
     }
     
     .footer {
@@ -227,4 +242,8 @@ img {
         display: inline-block;
         margin-bottom: 30px;
         margin-top: 30px;
+    }
+
+    .news-block img {
+        margin-bottom: 20px;
     }
