@@ -51,13 +51,14 @@ body {
     overflow: hidden;
   }
 
-  .page-nav {
-    margin-bottom: 110px;
-    width: 1110px;
+a {
+    text-decoration: none;
+    color: #626262;
 }
 
 .navigation {
     float: right;
+    list-style: none;
 }
 
 .navigation li{
@@ -66,7 +67,7 @@ body {
     text-transform: uppercase;
     list-style: none;
     margin-right: 30px;
-    font-family: OpenSans Bold, sans-serif;
+    font-family: "OpenSans", sans-serif;
     float: left;
     margin-bottom: 30px;
     margin-top: 43px;
@@ -101,6 +102,7 @@ img {
 
 
  .features {
+     padding-top: 30px;
 }
 
 .features-list {
@@ -112,14 +114,14 @@ img {
 .features-list-item {
     float: left;
     width: 255px;
-    margin-right: 10px;
+    margin-right: 22px;
     margin-bottom: 60px;
     text-align: center;
     background-color: #e9f0fd;
     background-color: rgb(50,50,50);
 }
 
-.features-list-item :nth-child(4n) {
+.features-list-item li:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -136,14 +138,13 @@ img {
     text-transform: uppercase;
 }
 
-.features-list-div:hover {
+.features-list-item:hover {
     background-color: rgb(26,188,156);
 }
 
 .features-list-item .prise:hover {
     background-color: rgb(127,217,199);
 }
-
 
 .features-list-item h3 {
     color: white;
@@ -160,7 +161,6 @@ img {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 130px;
-    margin-top: 100px;
     }
     
     .name::after {
@@ -176,6 +176,7 @@ img {
     
     .news {
         margin-bottom: 10px; 
+      
     }
     
     .news-else {
@@ -190,7 +191,7 @@ img {
         float: left;
     }
     
-    .news-block :last-child {
+    .news-block li:nth-child(3n): {
         margin-right: 0;
     }
     
@@ -224,11 +225,6 @@ img {
         font-size: 14px;
         margin-bottom: 0px;
 
-    }
-    
-    .footer {
-        margin: 0 auto;
-        
     }
     
     .page-footer {
