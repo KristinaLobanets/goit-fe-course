@@ -1,6 +1,38 @@
-html {
+
+:root {
+    --main-font: "Roboto",  sans-serif;
+    --secondary-font:  "OpenSans",  sans-serif;
+    --third-font: "Times", serif;
+
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
     box-sizing: border-box;
-}
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
 
 *, 
 *::before,
@@ -14,7 +46,7 @@ html {
     box-sizing: border-box;
     background-color: #e9f0fd;
 }
-  
+
 
 .clearfix::after {
     display: table;
@@ -26,10 +58,14 @@ body {
     margin: 0;
 }
 
+
 .container {
     width: 1110px;
     margin: 0 auto;
+   
 }
+
+
 
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
@@ -57,7 +93,7 @@ body {
 
 .navigation li{
     font-size: 14px;
-    font-family: "OpenSans",  sans-serif;
+    font-family: var(--secondary-font);
     font-weight: bold;
     line-height: 0.786;
     text-transform: uppercase;
@@ -81,7 +117,7 @@ body {
     list-style: none;
     float: left;
     width: 90px;
-    font-family: "Roboto",  sans-serif;
+    font-family: var(--main-font);
     line-height: 1.067;
     text-transform: uppercase;
     margin-top: 39px;
@@ -92,8 +128,8 @@ body {
   
 img {
     display: block;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .title {
@@ -114,7 +150,7 @@ color: white;
 text-transform: uppercase;
 text-align: center;
 font-size: 60px;
-font-family: "Roboto",  sans-serif;
+font-family: var(--main-font);
 font-weight: 900;
 
 }
@@ -124,13 +160,13 @@ color: white;
 text-transform: uppercase;
 text-align: center;
 font-size: 24px;
-font-family: "Roboto", sans-serif;
+font-family: var(--main-font);
 font-weight: 300;
 }
 
 .name {
     font-size: 64px;
-    font-family: "roboto", sans-serif;
+    font-family: var(--main-font);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 130px;
@@ -178,7 +214,7 @@ font-weight: 300;
     float: right;
     display: inline-block;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     padding: 5px 5px;
     line-height: 22px;
 }
@@ -199,6 +235,8 @@ font-weight: 300;
     line-height: 22px;
     display: inline-block;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     padding: 5px 5px;
 }
+
+
