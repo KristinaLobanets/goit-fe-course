@@ -1,7 +1,281 @@
-h1 {
-    color: brown;
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0 ;
+    padding: 0;
 }
 
-p {
-    color: aqua;
+html {
+    box-sizing: border-box;
 }
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+   
+ 
+}
+
+.nav {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #b6eae1 ;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30px;
+   
+  }
+
+  .navigation {
+      width: 500px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+
+  }
+  
+  .navigation a{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #b6eae1;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+      color: red;
+  }
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.services {
+
+}
+
+.title {
+ margin-bottom: 110px;
+}
+
+.second-line::after {
+    display: block;
+    content: "";
+    width: 63px;
+    height: 5px;
+    background-color: #f38181;
+    margin: 40px auto;
+}
+
+.first-line {
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.second-line {
+    font-size: 30px;
+    font-family: "Montserrat",sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+      flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+  
+  .info-block {
+      width: 380px;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .tblock {
+      width: 300px;
+
+  }
+
+.block-photo::before {
+    content: "";
+    background-image: url("../services/photo.png");
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.block-web::before {
+    content: "";
+    background-image: url("../services/web.png");
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.block-creat::before {
+    content: "";
+    background-image: url("../services/creat.png");
+    background-size: cover;
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+}
+
+.block-seo::before {
+    content: "";
+    background-image: url("../services/seo.png");
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.block-css::before {
+    content: "";
+    background-image: url("../services/html.png");
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.block-digital::before {
+    content: "";
+    background-image: url("../services/digital.png");
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+
+  .info-title {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: left;
+
+  }
+  
+  .info-informatoin {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 2;
+    text-align: left;
+    
+  }
+  
+  .team {
+
+  }
+
+  .txt-second-blosk {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+  }
+
+
+  .team-list {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .team-block {
+    width: 380px;
+    margin-bottom: 40px;
+    
+  }
+
+  .team-image {
+      margin-bottom: 30px;
+
+  }
+
+  .team-name {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+  }
+
+  .team-occoupation {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+
+  }
+
+
+
+
