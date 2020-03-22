@@ -299,8 +299,8 @@ header {
  justify-content: center;
  align-items: center;
   position: absolute;
-  opacity: 0.549; 
-  background-image: linear-gradient( #f38181 #fce38a);
+  opacity: 0.9; 
+  background-image: linear-gradient( #f38181, #fce38a);
   width: 380px;
   height: 470px;
 }
@@ -313,7 +313,7 @@ header {
   background-color: #95e1d3 ;
   width: 58px;
   height: 58px;
-
+ 
 }
 
 .overlay-icon-instagram {
