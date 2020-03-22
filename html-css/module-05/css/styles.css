@@ -216,6 +216,8 @@ font-weight: 300;
     background-color: rgb(127,217,199);
 }
 
+
+
 .features-list-item h3 {
     color: white;
     margin-top: 0px;
@@ -234,39 +236,50 @@ font-weight: 300;
 }
 
 .overlay  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 240px;
     height: 260px;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.549;
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .overlay-icon-like {
-    background-image: url("");
+    background-image: url("../logo/like.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55px;
+    height: 55px;
  
 }
 
 .overlay-icon-arrows {
-    background-image: url("");
- 
+    background-image: url("../logo/shuffle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55px;
+    height: 55px;
 
 }
 
 .overlay-icon-clock {
-    background-image: url("");
- 
+    background-image: url("../logo/clock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55px;
+    height: 55px;
 
 }
 
 .overlay-icon-add {
+    background-image: url("../logo/cart.png");
 font-size: 14px;
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
 }
 
-.card:hover .overlay {
-    opacity: 0.549;
-}
 
-  
-  
+
