@@ -52,8 +52,74 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    margin-bottom: 20px;
+   
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation li{
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    line-height: 0.786;
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 30px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 43px;
+    color: black;
+}
+
+a {
+    color: black
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation li a:hover {
+    color:  rgb(26,188,156);
+}
+
+.logo {
+    font-size: 30px;
+    list-style: none;
+    float: left;
+    width: 90px;
+    font-family: var(--main-font);
+    line-height: 1.067;
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 20px;
+    margin-top: 43px;
+    color: rgb(26, 188, 156);
+}
+
+/*haeder*/
+
+.box-slider-text {
+    display: inline-block; 
+    width: 70%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 
 .slider-wrapper {
     position: relative;
@@ -116,16 +182,6 @@ body {
     right: 0;
 }
 
-
-
-.box-slider-text {
-    display: inline-block; 
-    width: 70%; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
 .slider-title {
     font-size: 55px;
     line-height: 1.367;
@@ -144,60 +200,7 @@ body {
     line-height: 54px;
 }
 
-.container {
-    width: 1110px;
-    margin: 0 auto;
-   
-}
 
-  .page-nav {
-    margin-bottom: 30px;
-    width: 1110px;
-}
-
-.navigation {
-    float: right;
-}
-
-.navigation li{
-    font-size: 14px;
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    line-height: 0.786;
-    text-transform: uppercase;
-    list-style: none;
-    margin-right: 30px;
-    float: left;
-    margin-bottom: 20px;
-    margin-top: 43px;
-    color: black;
-}
-
-a {
-    color: black
-}
-
-.navigation li:last-child {
-    margin-right: 0;
-}
-
-.navigation li a:hover {
-    color:  rgb(26,188,156);
-}
-
-.logo {
-    font-size: 30px;
-    list-style: none;
-    float: left;
-    width: 90px;
-    font-family: var(--main-font);
-    line-height: 1.067;
-    text-transform: uppercase;
-    margin-top: 39px;
-    margin-bottom: 20px;
-    margin-top: 43px;
-    color: rgb(26, 188, 156);
-}
   
 img {
     display: block;
@@ -228,6 +231,10 @@ img {
         /*features*/
 
   
+.features {
+
+}
+
 
   .features-list-item {
       float: left;
