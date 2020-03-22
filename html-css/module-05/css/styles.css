@@ -200,13 +200,21 @@ a {
     line-height: 54px;
 }
 
+.submit {
 
-  
+}
+
+.img-button {
+    
+}
+
+
 img {
     display: block;
     height: auto;
     max-width: 100%;
 }
+
 
 
 
