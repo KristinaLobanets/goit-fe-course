@@ -34,8 +34,6 @@ body {
     margin: 0 auto;
 }
 
-
-
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
@@ -53,13 +51,15 @@ body {
 
 .page-header {
     padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 a {
     text-decoration: none;
     color: #626262;
-    
-
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
 }
 
 .navigation {
@@ -68,13 +68,12 @@ a {
 }
 
 .navigation li{
-    font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
     list-style: none;
     margin-right: 30px;
-    font-family: "OpenSans", sans-serif;
     float: left;
+
 }
 
 .navigation li:last-child {
@@ -92,6 +91,10 @@ a {
     width: 90px;
     font-family: "Roboto",  sans-serif;
     text-transform: uppercase;
+}
+
+.logo::first-letter {
+    color:  rgb(26,188,156);
 }
 
 img {
@@ -126,12 +129,16 @@ img {
     margin-right: 0;
 }
 
+.features-list-item li:nth-child(n+4) {
+    margin-bottom: 0;
+}
+
 
 
 .features-list-item span {
     color: white;
     font-size: 18px;
-    background-color: rgb(140,140,140); 
+    background-color: rgba(140,140,140,0.6); 
     float: right;
     display: inline-block;
     padding: 5px 5px;
@@ -143,9 +150,6 @@ img {
     background-color: rgb(26,188,156);
 }
 
-.features-list-item .prise:hover {
-    background-color: rgb(127,217,199);
-}
 
 .features-list-item h3 {
     color: white;
@@ -156,15 +160,16 @@ img {
     text-transform: uppercase;
 
 }
-.name {
+.title {
     font-size: 64px;
-    font-family: roboto, sans-serif;
+    font-family: "roboto", sans-serif;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 130px;
+    margin: 0;
+    margin-bottom: 90px;
     }
     
-    .name::after {
+    .title::after {
         display: block;
         content: "";
         width: 165px;
@@ -201,15 +206,13 @@ img {
     margin-bottom: 30px;
     }
     
-    h4 {
-    font-size: 19px;
-    margin-bottom: 25px;
-    }
 
-    .news-name  {
+   .naws-name {
         margin-bottom: 50px;
         font-family: "OpenSans", sans-serif;
-        font-size: 18px ;
+        font-size: 18px;
+        margin-bottom: 25px;
+        line-height: 28px;
     }
 
     .news-txt::before {
@@ -224,21 +227,21 @@ img {
     .news-txt {
         font-family: "OpenSans", sans-serif;
         font-size: 14px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+        line-height: 24px;
 
     }
     
     .page-footer {
         font-size: 20px;
         line-height: 24px;
-       padding: 15px 25px;
+        padding: 15px 25px;
         border-width: 1px;
         outline: none; 
         background-color: rgb(26,188,156);
         color: white;
         display: inline-block;
-        margin-bottom: 30px;
-        margin-top: 30px;
     }
 
     .news-block img {

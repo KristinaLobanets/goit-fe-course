@@ -60,9 +60,12 @@ body {
     margin: 0 auto;
 }
 
+header {
+    background-color: white;
+}
+
 .page-nav {
-    margin-bottom: 20px;
-   
+    padding-bottom: 20px;
 }
 
 .navigation {
@@ -259,10 +262,10 @@ img {
   }
 
   .features-list-item span {
-
+      float: right ;
     color: white;
     font-size: 18px;
-    background-color: rgb(140,140,140); 
+    background-color: rgba(140,140,140, .44); 
     display: inline-block;
     text-transform: uppercase;
     font-family: var(--main-font);
@@ -314,8 +317,8 @@ img {
     background-image: url("../logo/like.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
  
 }
 
@@ -323,8 +326,8 @@ img {
     background-image: url("../logo/shuffle.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
 
 }
 
@@ -332,8 +335,8 @@ img {
     background-image: url("../logo/clock.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
 
 }
 
@@ -342,4 +345,15 @@ img {
 font-size: 14px;
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
+    width: 168px;
+    height: 52px;
+
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.features-list-item:hover .overlay {
+    opacity: 1;
 }
