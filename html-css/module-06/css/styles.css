@@ -300,7 +300,7 @@ header {
  justify-content: center;
  align-items: center;
   position: absolute;
-  opacity: 0.9; 
+  opacity: 0.8; 
   background-image: linear-gradient( #f38181, #fce38a);
   width: 380px;
   height: 470px;
@@ -344,10 +344,14 @@ header {
   height: 58px;
 }
 
-.card:hover .overlay {
-  opacity: 0.549;
+
+.overlay {
+  opacity: 0;
 }
 
+.team-block:hover .overlay {
+  opacity: 0.8;
+}
 
 //*
 #95e1d3
