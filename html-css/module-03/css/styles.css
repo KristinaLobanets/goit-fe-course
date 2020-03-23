@@ -15,7 +15,7 @@ html {
     box-sizing: border-box;
 }
   
-body, .p, button {
+body, .p, button, a {
     font-family: 'Playfair Display', serif;
     color: #626262;
     font-size: 14px;
@@ -53,6 +53,11 @@ body {
 
   .navigation a {
       text-decoration: none;
+      font-family: 'Playfair Display', serif;
+      color: #626262;
+      font-size: 18px;
+    font-weight: 400;
+
   }
 
 .navigation li{
