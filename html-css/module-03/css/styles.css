@@ -51,6 +51,10 @@ body {
   text-align: center;
   }
 
+  .navigation a {
+      text-decoration: none;
+  }
+
 .navigation li{
     display: inline-block;
     font-size: 19px;

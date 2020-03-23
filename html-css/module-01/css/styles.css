@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 990px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -49,6 +49,12 @@ body {
 
   .navigation {
   text-align: center;
+  }
+
+  .navigation a {
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+      color: #626262;
   }
 
 .navigation li{
@@ -74,13 +80,17 @@ body {
 
     font-size: 27px;
     line-height: 33px;
+    margin-bottom: 35px;
 
 }
+
 
 .category {
     font: 300 14px 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .page-footer {
@@ -100,6 +110,7 @@ body {
 
 .page-footer:hover {
     background-color: rgb(98,98,98);
+    color: white;
 }
 
 img {
@@ -118,10 +129,12 @@ img {
     width: 420px;
    margin-right: 60px;
    font-size: 14px;
+   margin-bottom: 130px;
+
 
 }
 
-.features-list-item:nth-child(ever) {
+.features-list-item:nth-child(even) {
     margin-right: 0;
 }
 
