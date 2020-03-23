@@ -297,6 +297,23 @@ img {
 
 /*hover*/
 
+button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border: ;
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     position: relative;
 }
@@ -314,7 +331,7 @@ img {
 }
 
 .overlay-icon-like {
-    background-image: url("../logo/like.png");
+    background-image: url("../logo/like1.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 52px;
@@ -323,7 +340,7 @@ img {
 }
 
 .overlay-icon-arrows {
-    background-image: url("../logo/shuffle.png");
+    background-image: url("../logo/shuffle1.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 52px;
@@ -332,7 +349,7 @@ img {
 }
 
 .overlay-icon-clock {
-    background-image: url("../logo/clock.png");
+    background-image: url("../logo/clock1.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 52px;
@@ -341,12 +358,15 @@ img {
 }
 
 .overlay-icon-add {
-    background-image: url("../logo/cart.png");
-font-size: 14px;
+    background-image: url("../logo/cart1.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 14px;
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
     width: 168px;
     height: 52px;
+
 
 }
 
