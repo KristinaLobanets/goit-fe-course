@@ -52,12 +52,11 @@ p{
 }
 
 header {
-   
+    padding-bottom: 100px;
  
 }
 
 .nav {
-    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -90,7 +89,7 @@ header {
     text-align: center;
     text-decoration: none;
   }
- 
+
   .navigation a::after {
     display: block;
     content: "";
@@ -99,11 +98,12 @@ header {
     background-color: #f38181;
     margin: 10px auto;
     overflow: hidden;
-
+    opacity: 1;
   }
   
   .navigation a:hover {
     color:  #f38181;
+    opacity: 1;
 }
 
 .conteiner {
@@ -117,7 +117,7 @@ header {
 }
 
 .title {
- margin-bottom: 110px;
+ margin-bottom: 90px;
 }
 
 .second-line::after {
@@ -126,7 +126,7 @@ header {
     width: 63px;
     height: 5px;
     background-color: #f38181;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 
@@ -152,7 +152,6 @@ header {
     display: flex;
     justify-content: space-around;
       flex-wrap: wrap;
-    margin-bottom: 70px;
   }
   
   .info-block {
@@ -164,61 +163,54 @@ header {
   }
 
  
-
-.block-photo::before {
-    content: "";
+  .block-photo {
     background-image: url("../services/photo.png");
-    background-size: cover;
     display: inline-block;
-    width: 32px;
-    height: 32px;
-}
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  
+  }
 
-.block-web::before {
-    content: "";
+.block-web {
     background-image: url("../services/web.png");
-    background-size: cover;
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
 }
 
-.block-creat::before {
-    content: "";
+.block-creat {
     background-image: url("../services/creat.png");
-    background-size: cover;
     display: inline-block;
-    width: 36px;
-    height: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
 }
 
-.block-seo::before {
-    content: "";
+.block-seo {
     background-image: url("../services/seo.png");
-    background-size: cover;
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
 }
 
-.block-css::before {
-    content: "";
+.block-css {
     background-image: url("../services/html.png");
-    background-size: cover;
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
 }
 
-.block-digital::before {
-    content: "";
+.block-digital {
     background-image: url("../services/digital.png");
-    background-size: cover;
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
 }
-
 
   .info-title {
     font-size: 14px;
@@ -289,6 +281,11 @@ header {
     line-height: 1.6;
     text-align: center;
 
+  }
+
+  button {
+    border: none;
+    margin-left: 2px;
   }
 
   /*hover*/
