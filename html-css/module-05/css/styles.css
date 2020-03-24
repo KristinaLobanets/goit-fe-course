@@ -62,10 +62,12 @@ body {
 
 header {
     background-color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .page-nav {
-    padding-bottom: 20px;
+    
 }
 
 .navigation {
@@ -81,9 +83,8 @@ header {
     list-style: none;
     margin-right: 30px;
     float: left;
-    margin-bottom: 20px;
-    margin-top: 43px;
     color: black;
+    margin-top: 20px;
 }
 
 a {
@@ -106,9 +107,6 @@ a {
     font-family: var(--main-font);
     line-height: 1.067;
     text-transform: uppercase;
-    margin-top: 39px;
-    margin-bottom: 20px;
-    margin-top: 43px;
     color: rgb(26, 188, 156);
 }
 
@@ -306,6 +304,9 @@ button {
     font-family: "OpenSans", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    border: 2px solid #e9f0fd;
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -314,8 +315,16 @@ button {
     justify-content: center;
 }
 
+.button-first {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 .card {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .overlay  {
