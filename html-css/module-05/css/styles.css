@@ -204,11 +204,9 @@ a {
     line-height: 54px;
 }
 
-.submit {
-
-}
 
 .img-button {
+
     
 }
 
@@ -303,7 +301,7 @@ button {
     background: transparent;
     background-color: transparent;
     border: ;
-    font-size: 14px;
+    font-size: 70px;
     font-family: "OpenSans", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -317,6 +315,8 @@ button {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
 
 button:hover {
     background-color: rgb(26,188,156);
