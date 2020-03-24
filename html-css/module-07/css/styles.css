@@ -1,7 +1,10 @@
-h1 {
-    color: brown;
-}
+.navigation {
+    font-size: 14px;
+    font-family: "Montserrat";
+  }
 
-p {
-    color: aqua;
-}
+  .navigation a {
+      text-decoration: none;
+      color: black;
+  }
+  
