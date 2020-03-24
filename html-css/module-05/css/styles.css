@@ -107,9 +107,12 @@ a {
     font-family: var(--main-font);
     line-height: 1.067;
     text-transform: uppercase;
-    color: rgb(26, 188, 156);
+    
 }
 
+.logo::first-letter {
+    color: rgb(26, 188, 156);
+}
 /*haeder*/
 
 .box-slider-text {
@@ -315,6 +318,12 @@ button {
     justify-content: center;
 }
 
+button:hover {
+    background-color: rgb(26,188,156);
+    border: none;
+
+}
+
 .button-first {
     display: flex;
     flex-wrap: nowrap;
@@ -325,6 +334,7 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .overlay  {
