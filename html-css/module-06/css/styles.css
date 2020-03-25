@@ -305,6 +305,7 @@ header {
   background-image: linear-gradient( #f38181, #fce38a);
   width: 380px;
   height: 470px;
+  box-shadow: 10px 10px 0px #95e1d3; 
 }
 
 
@@ -353,6 +354,9 @@ header {
 .team-block:hover .overlay {
   opacity: 0.8;
 }
+
+
+
 
 //*
 #95e1d3
