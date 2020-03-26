@@ -149,10 +149,11 @@
    width: 280px;
    height: 100px;
  }
-//*
+
  .e-commerce::before {
-     background-image: url("../logo/Icon-Basket.png");
+     background-image: url("../logo/Circle-3.png");
      background-repeat: no-repeat;
+     background-position: center;
      width: 37px;
      height: 37px;
 }
@@ -160,6 +161,7 @@
  .web::before {
     background-image: url("../logo/Icon-Laptop.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 37px;
     height: 37px;
 }
@@ -167,10 +169,11 @@
  .security::before {
     background-image: url("../logo/Icon-Locked.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 37px;
     height: 37px;
 }
-*/
+
  .e-commerce {
 
  }
