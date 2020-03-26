@@ -1,7 +1,10 @@
  * {
-     width: 940px;
-     margin: 0 auto;
 
+ }
+
+ .container {
+  width: 940px;
+  margin: 0 auto;
  }
 
  ul, li {
@@ -175,11 +178,12 @@
  }
 
  .contact {
-     background-image: url("../Background-down.png");
 
  }
 
  .contact-title {
+  text-transform: uppercase;
+  text-align: center;
 
  }
 
@@ -190,11 +194,19 @@
  .wrapper {
 
  }
+ 
+.contact {
+  background-color: black;
+  background-image: url("../Map Image.png");
+
+}
+
 
  .contact-form {
     display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   padding-bottom: 100px;
  }
 
 .contact-form-all {
@@ -214,6 +226,7 @@
    height: 50px;
    margin-right: 30px;
    margin-bottom: 30px;
+   text-transform: uppercase;
  }
 
  .block-imput:last-child  {
@@ -223,6 +236,7 @@
  .block-messege-section {
    width: 455px;
    height: 222px;
+   text-transform: uppercase;
  }
 
  .send-button {
@@ -231,5 +245,6 @@
    background-color: #fed136;
    color: white;
    border: #fed136;
+   text-transform: uppercase;
  }
   
