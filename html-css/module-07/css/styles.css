@@ -97,6 +97,8 @@
  }
 
  .header-section {
+   display: flex;
+   justify-content: space-between;
 
  }
 
@@ -105,10 +107,14 @@
  }
 
  .navigation {
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
 
  }
 
  .navigation-list {
+   
 
  }
 
@@ -117,25 +123,33 @@
  }
 
  .title-head {
+   text-align: center;
 
  }
 
  .title-txt {
+  text-align: center;
 
  }
 
  .services {
-
+   padding-bottom: 100px;
+  
  }
 
  .services-section {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: nowrap;
 
  }
 
  .services-block {
-
+   width: 280px;
+   height: 100px;
  }
-
+//*
  .e-commerce::before {
      background-image: url("../logo/Icon-Basket.png");
      background-repeat: no-repeat;
@@ -156,7 +170,7 @@
     width: 37px;
     height: 37px;
 }
-
+*/
  .e-commerce {
 
  }
