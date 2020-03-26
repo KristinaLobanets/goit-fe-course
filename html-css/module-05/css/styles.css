@@ -141,7 +141,6 @@ a {
     content: "";
     background-color: rgba(0, 0, 2, 0.52);
     z-index: 10;
-    
 }
 
 .slider-img {
@@ -149,7 +148,6 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: top;
-    
 }
 
 .content-wrap {
@@ -199,26 +197,9 @@ a {
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 24px;
-   
     letter-spacing: -0.48px;
     line-height: 54px;
 }
-
-
-.img-button {
-
-    
-}
-
-
-img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-
-
 
 .name {
     font-size: 64px;
@@ -229,7 +210,7 @@ img {
     margin-top: 100px;
     }
     
-    .name::after {
+.name::after {
         display: block;
         content: "";
         width: 165px;
@@ -240,11 +221,6 @@ img {
 
         /*features*/
 
-  
-.features {
-
-}
-
 
   .features-list-item {
       float: left;
@@ -253,7 +229,6 @@ img {
       margin-right: 20px;
       margin-bottom: 30px;
       padding: 0px;
-
   }
 
   .features-list-item:nth-child(4n){
@@ -280,8 +255,6 @@ img {
 .features-list-item .prise:hover {
     background-color: rgb(127,217,199);
 }
-
-
 
 .features-list-item h3 {
     color: white;
@@ -317,11 +290,9 @@ button {
 }
 
 
-
 button:hover {
     background-color: rgb(26,188,156);
     border: none;
-
 }
 
 .button-first {
@@ -345,8 +316,7 @@ button:hover {
     position: absolute;
     width: 240px;
     height: 260px;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .overlay-icon-like {
@@ -355,7 +325,6 @@ button:hover {
     background-position: center;
     width: 52px;
     height: 52px;
- 
 }
 
 .overlay-icon-arrows {
@@ -364,7 +333,6 @@ button:hover {
     background-position: center;
     width: 52px;
     height: 52px;
-
 }
 
 .overlay-icon-clock {
@@ -373,7 +341,6 @@ button:hover {
     background-position: center;
     width: 52px;
     height: 52px;
-
 }
 
 .overlay-icon-add {
@@ -385,8 +352,6 @@ button:hover {
     color: rgb(255, 255, 255);
     width: 168px;
     height: 52px;
-
-
 }
 
 .overlay {
