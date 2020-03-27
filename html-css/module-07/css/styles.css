@@ -297,7 +297,7 @@
    width: 455px;
    height: 222px;
    text-transform: uppercase;
-   border-radius: 10px;
+   border-radius: 3px;
  }
 
  .send-button {
@@ -308,14 +308,18 @@
    border: #fed136;
    text-transform: uppercase;
  }
+
   
  .block-imput,
- .block-messege-section:required:focus:valid {
-  outline-color: green;
+ .block-messege-section:focus:valid {
+  border-radius: 10px;
+  border:  3px solid green;
  }
+
+
 
  .block-imput,
  .block-messege-section:required:focus:invalid {
-  outline-color: red;
+  border-radius: 10px;
+  outline:  1px solid red;
  }
-
