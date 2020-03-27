@@ -309,14 +309,11 @@
    text-transform: uppercase;
  }
 
-  
  .block-imput,
  .block-messege-section:focus:valid {
   border-radius: 10px;
   border:  3px solid green;
  }
-
-
 
  .block-imput,
  .block-messege-section:required:focus:invalid {
