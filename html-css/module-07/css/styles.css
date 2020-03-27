@@ -90,9 +90,19 @@
     height: auto;
  }
  
- //*txt setting*/
- 
+ .header-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
 
+.navigation { 
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+ 
  .navigation-list {
     font-size: 14px;
     font-family: "Montserrat";
@@ -116,9 +126,13 @@
   
   .logo {
     font-family: 'Condiment';
-    font-size: 36px;
+    font-size: 40px;
     color: #fed136;
     line-height: 1.577;
+  }
+
+  .title {
+    padding-bottom: 75px;
   }
 
   .title-head {
@@ -129,6 +143,7 @@
     margin: 0 auto;
     text-transform: uppercase;
     padding-bottom: 20px;
+    text-align: center;
   }
 
   .title-txt {
@@ -140,6 +155,11 @@
     text-align: center;
     padding: 0px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .services {
+    padding-bottom: 100px;
   }
 
   .services-title {
@@ -177,63 +197,12 @@
     text-align: center;
     padding-bottom: 50px;
   }
-  
- //* header */
-
- header {
-   
- }
-
- .header-section {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 50px;
-   padding-bottom: 120px;
- }
-
- .logo {
-
- }
-
- .navigation {
-   width: 50%;
-   display: flex;
-   justify-content: space-between;
-
- }
-
- .navigation-list {
-   
-
- }
-
- .title {
-   padding-bottom: 75px;
-
- }
-
- .title-head {
-   text-align: center;
-
- }
-
- .title-txt {
-  text-align: center;
-
- }
-
- .services {
-   padding-bottom: 100px;
-   
-  
- }
 
  .services-section {
     display: flex;
    flex-direction: row;
    justify-content: space-between;
    flex-wrap: nowrap;
-
  }
 
  .services-block {
@@ -275,35 +244,21 @@
   flex-wrap: wrap;
  }
 
- .services-txt {
-  
- }
-
  .contact {
    padding-top: 100px;
-
  }
 
  .contact-title {
   text-transform: uppercase;
   text-align: center;
-
- }
-
- .contact-txt {
-
- }
-
- .wrapper {
-
  }
  
 .contact {
   background-color: black;
   background-image: url("../Map Image.png");
-
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
-
 
  .contact-form {
     display: flex;
@@ -330,6 +285,8 @@
    margin-right: 30px;
    margin-bottom: 30px;
    text-transform: uppercase;
+   border-radius: 10px;
+   background-color: white;
  }
 
  .block-imput:last-child  {
@@ -340,6 +297,7 @@
    width: 455px;
    height: 222px;
    text-transform: uppercase;
+   border-radius: 10px;
  }
 
  .send-button {
@@ -351,3 +309,13 @@
    text-transform: uppercase;
  }
   
+ .block-imput,
+ .block-messege-section:required:focus:valid {
+  outline-color: green;
+ }
+
+ .block-imput,
+ .block-messege-section:required:focus:invalid {
+  outline-color: red;
+ }
+
