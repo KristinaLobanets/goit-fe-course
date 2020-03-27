@@ -309,23 +309,16 @@
    text-transform: uppercase;
  }
 
-
+ .block-imput:required:focus:valid,
  .block-messege-section:required:focus:valid {
   border-radius: 10px;
   border:  3px solid green;
  }
 
+ .block-imput:required:focus:invalid,
  .block-messege-section:required:focus:invalid {
   border-radius: 10px;
   outline:  1px solid red;
  }
 
- .block-imput:required:focus:invalid {
-  border-radius: 10px;
-  outline:  1px solid red;
- }
 
- .block-imput:required:focus:valid {
-  border-radius: 10px;
-  border:  3px solid green;
- }
