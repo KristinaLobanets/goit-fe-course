@@ -177,14 +177,6 @@
     background-color: #ff4e50;
     padding: 13px 22px;
   }
-
-  .partner {
-
-  }
-
-  .title-partner {
-
-  }
   
    .title {
     font-size: 24px;
@@ -261,7 +253,6 @@
     bottom: -60px;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 50px;
-     
    }
 
    .team-item-title {
@@ -272,7 +263,6 @@
      font-weight: 700;
      line-height: 1.2;
      margin-bottom: 14px;
-    
    }
   
    .team-item-text {
@@ -294,7 +284,7 @@
      border-color: #ff4e50;
      padding: 13px 52px;
       margin: 15px 15px ;
-   
+  
    }
 
   @media (min-width: 320px) and (max-width: 424px) {
