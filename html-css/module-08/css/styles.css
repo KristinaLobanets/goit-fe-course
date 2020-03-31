@@ -149,6 +149,8 @@
   .head-title {
     display: flex;
     flex-direction: column;
+    width: 295px;
+    margin: 0 auto;
   }
 
   .dreams-title {
@@ -171,8 +173,9 @@
   }
 
   .link-dreams {
+    display: block;
     background-color: #ff4e50;
-    padding: 13px 52px;
+    padding: 13px 22px;
   }
 
   .partner {
@@ -291,6 +294,7 @@
      border-color: #ff4e50;
      padding: 13px 52px;
       margin: 15px 15px ;
+   
    }
 
   @media (min-width: 320px) and (max-width: 424px) {
@@ -325,12 +329,33 @@
     .head-container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 150px;
+    }
 
+    .dreams-title {
+      padding-bottom: 30px;
+
+    }
+
+    .dreams-text {
+      padding-bottom: 20px;
+    }
+    .team-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+     
+    }
+
+    .team-item {
+      padding-bottom: 10px;
+      margin-right: 40px;
     }
 
   }
 
-  @media (min-width: 800px) and (max-width: 2560px) {
+  @media (min-width: 800px) {
     .container {
         width: 945px;
         margin: 0 auto;
@@ -343,7 +368,33 @@
     .head-container {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 150px;
 
+    }
+
+    .dreams-title {
+      padding-bottom: 30px;
+
+    }
+
+    .dreams-text {
+      padding-bottom: 20px;
+    }
+
+    .partner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap ;
+    }
+
+    .team-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .team-item {
+      padding-bottom: 10px;
+      margin-right: 40px;
     }
 
   }
