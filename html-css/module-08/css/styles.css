@@ -198,10 +198,10 @@
     margin-bottom: 14px;
    }
    
-.team-item-person {
+  .team-item-person {
   display: block;
   position: relative;
-}
+  }
 
  .team-item-person::after {
   content: "";
