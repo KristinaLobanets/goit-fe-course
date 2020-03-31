@@ -93,6 +93,12 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
 
  .link {
     font-size: 14px;
@@ -178,24 +184,89 @@
 
    }
 
-   .tem-list {
+   .team-list {
 
    }
+  
+   .team-item {
+    width: 220px;
+    margin: 0 auto;
+   }
    
-   .team-iten {
+   .team-item::after {
+  
+   }
 
+   .ikon-tv::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../ikons/tv.png");
+    background-color: #ff4e50;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+
+   }
+
+   .ikon-lab::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../ikons/lab.png");
+    background-color: #ffa507;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+   }
+
+   .ikon-coffe::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../ikons/coffe.png");
+    background-color: #1cd7ad ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+   }
+
+   .ikon-telegram::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../ikons/telegram.png");
+    background-color: #4e73db;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
    }
 
    .team-iten-person {
-
+     
    }
 
    .team-item-title {
-
+     text-align: center;
+     font-size: 14px;
+     font-family: "Montserrat";
+     color: rgb(51, 51, 51);
+     font-weight: 700;
+     line-height: 1.2;
+    
    }
-
-   .team-iten-text {
-
+  
+   .team-item-text {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+  
    }
 
    .bottom-down {
