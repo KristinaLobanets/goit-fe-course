@@ -185,68 +185,70 @@
    }
 
    .team-list {
-
+    margin-bottom: 14px;
    }
   
    .team-item {
     width: 220px;
     margin: 0 auto;
+    margin-bottom: 14px;
    }
    
-   .team-item::after {
-  
+.team-item-person {
+  display: block;
+  position: relative;
+}
+
+   .team-item-person::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 45px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50px; 
+  border: 4px  solid;
+  border-color: white;
    }
 
    .ikon-tv::after {
-    content: "";
-    display: block;
-    width: 33px;
-    height: 33px;
     background-image: url("../ikons/tv.png");
     background-color: #ff4e50;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 25px;
-
    }
 
    .ikon-lab::after {
-    content: "";
-    display: block;
-    width: 33px;
-    height: 33px;
     background-image: url("../ikons/lab.png");
     background-color: #ffa507;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 25px;
+  
    }
 
    .ikon-coffe::after {
-    content: "";
-    display: block;
-    width: 33px;
-    height: 33px;
     background-image: url("../ikons/coffe.png");
     background-color: #1cd7ad ;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 25px;
    }
 
    .ikon-telegram::after {
+    background-image: url("../ikons/telegram.png");
+    background-color: #4e73db;
+
+   }
+
+   .team-iten-person::after {
     content: "";
     display: block;
     width: 33px;
     height: 33px;
-    background-image: url("../ikons/telegram.png");
-    background-color: #4e73db;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
-   }
-
-   .team-iten-person {
+    position: absolute;
+    right: 120px;
+    bottom: -60px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50px;
      
    }
 
@@ -257,6 +259,7 @@
      color: rgb(51, 51, 51);
      font-weight: 700;
      line-height: 1.2;
+     margin-bottom: 14px;
     
    }
   
@@ -266,7 +269,7 @@
     font-family: "Roboto";
     color: rgb(102, 102, 102);
     line-height: 1.2;
-  
+    margin-bottom: 14px;
    }
 
    .bottom-down {
@@ -278,8 +281,7 @@
      color: #ff4e50;
      border-color: #ff4e50;
      padding: 13px 52px;
-
-
+      margin: 15px 15px ;
    }
 
   @media (min-width: 320px) and (max-width: 424px) {
