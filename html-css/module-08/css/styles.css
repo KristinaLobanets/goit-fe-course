@@ -74,7 +74,6 @@
   }
   
   h2 {
-    color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 700;
   }
@@ -118,11 +117,9 @@
     background-size: cover;
     background-color: rgb(26, 25, 21);
     padding: 24px 0;
+    margin-bottom: 30px;
   }
 
-  .head-container {
-
-}
   .registration {
     display: flex;
     justify-content: center;
@@ -139,8 +136,13 @@
     padding: 11px 19px;
     margin-bottom: 75px;
   }
-
+  
   .logo {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
 
   }
 
@@ -180,8 +182,15 @@
   .title-partner {
 
   }
-   title {
-
+  
+   .title {
+    font-size: 24px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px 20px;
    }
 
    .team-list {
@@ -199,7 +208,7 @@
   position: relative;
 }
 
-   .team-item-person::after {
+ .team-item-person::after {
   content: "";
   display: block;
   width: 33px;
@@ -292,6 +301,13 @@
 
     .head-holiday {
         min-height: 540px;
+    }
+
+    .partner {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
   }
