@@ -279,6 +279,11 @@ img {
   margin: 15px 15px;
 }
 
+.jc-c {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 767px) {
 }
 
