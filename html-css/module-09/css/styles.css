@@ -116,6 +116,10 @@ img {
   margin-bottom: 30px;
 }
 
+.head-container {
+  margin-bottom: 75px;
+}
+
 .registration-button {
   border: none;
   border-radius: 25px;
@@ -125,7 +129,6 @@ img {
   font-size: 14px;
   font-weight: 700;
   padding: 11px 19px;
-  margin-bottom: 75px;
 }
 
 .registration-button:hover {
