@@ -117,7 +117,7 @@ img {
 }
 
 .registration-button {
-  border: 2px solid rgb(255, 255, 255, 1);
+  border: none;
   border-radius: 25px;
   background-color: transparent;
   outline: none;
@@ -126,6 +126,10 @@ img {
   font-weight: 700;
   padding: 11px 19px;
   margin-bottom: 75px;
+}
+
+.registration-button:hover {
+  border: 2px solid rgb(255, 255, 255, 1);
 }
 
 .logo {
@@ -293,10 +297,12 @@ img {
   .registration {
     margin-bottom: 150px;
   }
+
   .registration {
     text-align: right;
   }
-  .logo-div {
+
+  .logo {
     text-align: left;
   }
 }
@@ -305,7 +311,22 @@ img {
   .team-item:not(:nth-child(2n)) {
     margin-bottom: 60px;
   }
+
+  .registration {
+    text-align: right;
+  }
+
+  .logo {
+    text-align: left;
+  }
 }
 
 @media (min-width: 992px) {
+  .registration {
+    text-align: right;
+  }
+
+  .logo {
+    text-align: left;
+  }
 }
