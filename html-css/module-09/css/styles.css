@@ -40,7 +40,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -116,11 +116,6 @@ img {
   margin-bottom: 30px;
 }
 
-.registration {
-  display: flex;
-  justify-content: center;
-}
-
 .registration-button {
   border: 2px solid rgb(255, 255, 255, 1);
   border-radius: 25px;
@@ -142,8 +137,6 @@ img {
 }
 
 .head-title {
-  display: flex;
-  flex-direction: column;
   width: 295px;
   margin: 0 auto;
 }
@@ -267,11 +260,6 @@ img {
   margin-bottom: 14px;
 }
 
-.bottom-down {
-  display: flex;
-  justify-content: center;
-}
-
 .team-link {
   color: #ff4e50;
   border-color: #ff4e50;
@@ -285,12 +273,34 @@ img {
 }
 
 @media (max-width: 767px) {
+  .registration {
+    margin-bottom: 115px;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .registration {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
+  .registration {
+    margin-bottom: 150px;
+  }
+  .registration {
+    text-align: right;
+  }
+  .logo-div {
+    text-align: left;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 991px) {
+  .team-item:not(:nth-child(2n)) {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 992px) {
