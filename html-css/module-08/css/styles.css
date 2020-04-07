@@ -1,205 +1,204 @@
-
-
-
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'),
-         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'),
-         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-regular - latin */
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Montserrat", "Roboto", sans-serif;
-  }
-  
-  a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-  
-  p {
-    font-family: "Roboto";
-    font-weight: 300;
-  }
-
-  ul, li {
-    list-style: none;
-  }
-  
-  h1 {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  h2 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  
-  h3 {
-    color: rgb(51, 51, 51);
-    font-size: 14px;
-    font-weight: 700;
-  }
-  
-  a,
-  button,
-  h1,
-  h2,
-  h3 {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-
- .link {
-    font-size: 14px;
-    font-weight: 700;
-    border: 2px solid rgb(255, 78, 80);
-    border-radius: 25px;
-    text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-  .head-holiday {
-    background-image: url("../image/decktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    text-align: center;
-    object-fit: cover;
-    background-size: cover;
-    background-color: rgb(26, 25, 21);
-    padding: 24px 0;
-    margin-bottom: 30px;
-  }
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  .registration {
-    display: flex;
-    justify-content: center;
-  }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-  .registration-button {
-    border: 2px solid rgb(255, 255, 255, 1);
-    border-radius: 25px;
-    background-color: transparent;
-    outline: none;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: 700;
-    padding: 11px 19px;
-    margin-bottom: 75px;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    text-transform: uppercase;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+}
 
-  .head-title {
-    display: flex;
-    flex-direction: column;
-    width: 295px;
-    margin: 0 auto;
-  }
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 
-  .dreams-title {
-    font-size: 30px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.3;
-    text-align: center;
-  }
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+}
 
-  .dreams-text {
-    font-size: 20px;
-    font-family: "Roboto";
-    color: rgb(255, 255, 255);
-    line-height: 1.5;
-    text-align: center;
-    padding-bottom: 20px;
-  }
+ul,
+li {
+  list-style: none;
+}
 
-  .link-dreams {
-    display: block;
-    background-color: #ff4e50;
-    padding: 13px 22px;
-  }
-  
-   .title {
-    font-size: 24px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    padding: 20px 20px;
-   }
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-   .team-list {
-    margin-bottom: 14px;
-   }
-  
-   .team-item {
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 14px;
-   }
-   
-  .team-item-person {
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a,
+button,
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.head-holiday {
+  background-image: url("../image/decktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+  background-size: cover;
+  background-color: rgb(26, 25, 21);
+  padding: 24px 0;
+  margin-bottom: 30px;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-button {
+  border: 2px solid rgb(255, 255, 255, 1);
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 19px;
+  margin-bottom: 75px;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.head-title {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  margin: 0 auto;
+}
+
+.dreams-title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.dreams-text {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.link-dreams {
+  display: block;
+  background-color: #ff4e50;
+  padding: 13px 22px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.team-list {
+  margin-bottom: 14px;
+}
+
+.team-item {
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.team-item-person {
   display: block;
   position: relative;
-  }
+}
 
- .team-item-person::after {
+.team-item-person::after {
   content: "";
   display: block;
   width: 33px;
@@ -209,180 +208,170 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 50px; 
-  border: 4px  solid;
+  border-radius: 50px;
+  border: 4px solid;
   border-color: white;
-   }
+}
 
-   .ikon-tv::after {
-    background-image: url("../ikons/tv.png");
-    background-color: #ff4e50;
-   }
+.ikon-tv::after {
+  background-image: url("../ikons/tv.png");
+  background-color: #ff4e50;
+}
 
-   .ikon-lab::after {
-    background-image: url("../ikons/lab.png");
-    background-color: #ffa507;
-  
-   }
+.ikon-lab::after {
+  background-image: url("../ikons/lab.png");
+  background-color: #ffa507;
+}
 
-   .ikon-coffe::after {
-    background-image: url("../ikons/coffe.png");
-    background-color: #1cd7ad ;
-   }
+.ikon-coffe::after {
+  background-image: url("../ikons/coffe.png");
+  background-color: #1cd7ad;
+}
 
-   .ikon-telegram::after {
-    background-image: url("../ikons/telegram.png");
-    background-color: #4e73db;
+.ikon-telegram::after {
+  background-image: url("../ikons/telegram.png");
+  background-color: #4e73db;
+}
 
-   }
+.team-iten-person::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  position: absolute;
+  right: 120px;
+  bottom: -60px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
 
-   .team-iten-person::after {
-    content: "";
-    display: block;
-    width: 33px;
-    height: 33px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 25px;
-    position: absolute;
-    right: 120px;
-    bottom: -60px;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50px;
-   }
+.team-item-title {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
 
-   .team-item-title {
-     text-align: center;
-     font-size: 14px;
-     font-family: "Montserrat";
-     color: rgb(51, 51, 51);
-     font-weight: 700;
-     line-height: 1.2;
-     margin-bottom: 14px;
-   }
-  
-   .team-item-text {
-    text-align: center;
-    font-size: 14px;
-    font-family: "Roboto";
-    color: rgb(102, 102, 102);
-    line-height: 1.2;
-    margin-bottom: 14px;
-   }
+.team-item-text {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
 
-   .bottom-down {
-     display: flex;
-     justify-content: center;
-   }
+.bottom-down {
+  display: flex;
+  justify-content: center;
+}
 
-   .team-link {
-     color: #ff4e50;
-     border-color: #ff4e50;
-     padding: 13px 52px;
-      margin: 15px 15px ;
-  
-   }
+.team-link {
+  color: #ff4e50;
+  border-color: #ff4e50;
+  padding: 13px 52px;
+  margin: 15px 15px;
+}
 
-  @media (min-width: 320px) and (max-width: 424px) {
-    .container {
-        width: 295px;
-        margin: 0 auto;
-    }
-
-    .head-holiday {
-        min-height: 540px;
-    }
-
-    .partner {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-    }
-
+@media (min-width: 320px) and (max-width: 424px) {
+  .container {
+    width: 295px;
+    margin: 0 auto;
   }
-
-  @media (min-width: 425px) and (max-width: 799px) {
-    .container {
-        width: 660px;
-        margin: 0 auto;
-    }
-
-   .head-holiday {
-        min-height: 700px;
-    } 
-
-    .head-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-bottom: 150px;
-    }
-
-    .dreams-title {
-      padding-bottom: 30px;
-
-    }
-
-    .dreams-text {
-      padding-bottom: 20px;
-    }
-    .team-list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-     
-    }
-
-    .team-item {
-      padding-bottom: 10px;
-      margin-right: 40px;
-    }
-
-  }
-
-  @media (min-width: 800px) {
-    .container {
-        width: 945px;
-        margin: 0 auto;
-    }
 
   .head-holiday {
-        min-height: 700px;
-    }
-
-    .head-container {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 150px;
-
-    }
-
-    .dreams-title {
-      padding-bottom: 30px;
-
-    }
-
-    .dreams-text {
-      padding-bottom: 20px;
-    }
-
-    .partner {
-      display: flex;
-      flex-direction: column;
-      flex-wrap:wrap ;
-    }
-
-    .team-list {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .team-item {
-      padding-bottom: 10px;
-      margin-right: 40px;
-    }
-
+    min-height: 540px;
   }
 
-  
+  .partner {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 799px) {
+  .container {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .head-holiday {
+    min-height: 700px;
+  }
+
+  .head-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+  }
+
+  .dreams-title {
+    padding-bottom: 30px;
+  }
+
+  .dreams-text {
+    padding-bottom: 20px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    padding-bottom: 10px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 945px;
+    margin: 0 auto;
+  }
+
+  .head-holiday {
+    min-height: 700px;
+  }
+
+  .head-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-bottom: 150px;
+  }
+
+  .dreams-title {
+    padding-bottom: 30px;
+  }
+
+  .dreams-text {
+    padding-bottom: 20px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .team-item {
+    padding-bottom: 10px;
+    margin-right: 40px;
+  }
+}
