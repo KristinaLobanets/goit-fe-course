@@ -102,42 +102,43 @@ p{
 }
 
 header {
-    padding-bottom: 100px;
- 
+    padding-bottom: 50px;
+     margin-bottom: 60px;
 }
 
-.nav {
+
+.head-navigation {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 120px;
+   
 }
 
-.nav {
+.navigation {
     background-image: url("../Layer 15.png");
 }
 
 .logo {
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
-    color: #b6eae1 ;
+    color: white ;
     font-weight: 700;
     line-height: 1.2;
-    text-align: left;
-    margin-top: 30px;
-   
   }
 
-  .navigation {
-      width: 500px;
-      margin-top: 40px;
+  .navigation_block {
+      width: 50%;
       display: flex;
       justify-content: space-between;
 
   }
   
-  .navigation a{
+  .navigation_item {
     font-size: 14px;
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    color: #b6eae1;
+    color: white;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -146,29 +147,13 @@ header {
     transition: color  200ms linear;
   }
 
-  .navigation a::after {
-    display: block;
-    content: "";
-    width: 50px;
-    height: 5px;
-    background-color: #f38181;
-    margin: 10px auto;
-    overflow: hidden;
-    opacity: 0;
-    transition: color  200ms linear;
-  }
-  
-  .navigation a:hover {
-    color:  #f38181;
+  .navigation_item:hover {
+  color: rgb(252, 227, 138);
 }
 
-.navigation a::after:hover {
-  opacity: 1;
-}
-  
 .head-title {
    font-size: 72px;
-    font-family: "KaushanScript";
+    font-family: "Kaushan Script";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: center; 
@@ -184,15 +169,29 @@ header {
     text-align: center;
 }
 
+.head-buttom {
+    display: flex;
+    justify-content: center;
+}
+
+.head-buttom-block {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+    border: 3px  solid  white;
+    padding: 15px 25px; 
+}
+
 .conteiner {
     width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
 }
 
-.services {
-
-}
 
 .title {
  margin-bottom: 90px;
@@ -208,14 +207,14 @@ header {
 }
 
 
-.first-line{
+.title-first-line{
   font-size: 24px;
-  font-family: "KaushanScript";
+  font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
   line-height: 1.2;
 }
 
-.second-line {
+.title-second-line {
     font-size: 30px;
     font-family: "Montserrat",sans-serif;
     color: rgb(51, 51, 51);
@@ -240,56 +239,6 @@ header {
       padding-left: 50px;
   }
 
- 
-  .block-photo {
-    background-image: url("../services/photo.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-  
-  }
-
-.block-web {
-    background-image: url("../services/web.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-}
-
-.block-creat {
-    background-image: url("../services/creat.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-}
-
-.block-seo {
-    background-image: url("../services/seo.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-}
-
-.block-css {
-    background-image: url("../services/html.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-}
-
-.block-digital {
-    background-image: url("../services/digital.png");
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 45px;
-}
-
   .info-title {
     font-size: 14px;
     font-family: "Montserrat";
@@ -299,8 +248,13 @@ header {
     text-align: left;
 
   }
+
+  .blosk-infooo {
+      display: flex;
+      justify-content: space-between;
+  }
   
-  .info-informatoin {
+  .info-txt {
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
@@ -308,10 +262,13 @@ header {
     text-align: left;
     
   }
-  
-  .team {
 
+  .info-block-logo {
+      display: flex;
+      justify-content: space-between;
   }
+  
+ 
 
   .txt-second-block {
     font-size: 15px;
