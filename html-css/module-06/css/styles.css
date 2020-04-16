@@ -109,7 +109,7 @@ header {
     color:  #f38181;
 }
 
-.navig::after:hover {
+.navigation a:hover::after {
  opacity: 1;
 }
 
