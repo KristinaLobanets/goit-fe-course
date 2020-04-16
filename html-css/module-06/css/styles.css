@@ -94,24 +94,23 @@ header {
     transition: color  200ms linear;
   }
 
-  .navigation a::after {
+  .navig::after {
     display: block;
     content: "";
-    width: 30px;
+    width: 63px;
     height: 5px;
-    background-color: #f38181;
-    margin: 5px auto;
-    overflow: hidden;
+    background-color:  #f38181;
+    margin: 30px auto;
     opacity: 0;
-    transition: color  200ms linear;
   }
+
   
-  .navigation a:hover {
+ .navigation a:hover {
     color:  #f38181;
 }
 
-.navigation a::after:hover {
-  opacity: 1;
+.navig::after:hover {
+ opacity: 1;
 }
 
 .conteiner {
