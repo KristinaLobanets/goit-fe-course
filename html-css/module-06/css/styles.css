@@ -155,7 +155,7 @@ header {
 }
 
 .info-block {
-  width: 380px;
+  width: 320px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
@@ -237,7 +237,7 @@ header {
   line-height: 1.6;
   text-align: center;
   margin: 50px auto;
-  width: 950px;
+  max-width: 950px;
 }
 
 .team-list {
@@ -272,11 +272,6 @@ header {
   text-align: center;
 }
 
-button {
-  border: none;
-  margin-left: 2px;
-}
-
 /*hover*/
 
 .card {
@@ -296,63 +291,50 @@ button {
   );
   width: 380px;
   height: 470px;
-  box-shadow: 10px 10px 0px #95e1d3;
-  transition: 200ms linear;
   opacity: 0;
+}
+
+.overlay-btn {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fce38a;
+  width: 58px;
+  height: 58px;
 }
 
 .overlay-icon-facebook {
   background-image: url("../logo/facebook.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #95e1d3;
-  width: 58px;
-  height: 58px;
 }
 
 .overlay-icon-instagram {
   background-image: url("../logo/instagram.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
-  width: 58px;
-  height: 58px;
 }
 
 .overlay-icon-pinterest {
   background-image: url("../logo/pinterest.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
-  width: 58px;
-  height: 58px;
 }
 
 .overlay-icon-twitter {
   background-image: url("../logo/twitter.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
-  width: 58px;
-  height: 58px;
+}
+
+.overlay-btn:hover {
+  background-color: #95e1d3;
 }
 
 .team-block:hover {
   transform: translate(-10px, -10px);
+  transition: 200ms linear all;
 }
 
 .team-block:hover .overlay {
   opacity: 1;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: space-between;
-  border-color: rgb(229, 229, 229) 2px solid;
-  padding-bottom: 30px;
+  box-shadow: 10px 10px 0px #95e1d3;
+  transition: 200ms linear all;
 }
 
 .footer-txt {
+  padding-top: 15px;
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(51, 51, 51);
@@ -366,11 +348,15 @@ button {
   text-decoration: none;
 }
 
+.form-block {
+  display: flex;
+}
+
 .subscribe-form__btn {
   background-color: rgb(149, 225, 211);
   border: #95e1d3 2px solid;
   width: 150px;
-  height: 40px;
+  height: 44px;
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
@@ -381,5 +367,19 @@ button {
 }
 
 .subscribe-form__input {
-  height: 40px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(204, 204, 204);
+  line-height: 24px;
+  padding: 8px 54px 8px 10px;
+  outline: none;
+  border: 1px solid rgb(231, 231, 231);
+  border-right: none;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid rgb(231, 231, 231);
+  padding: 20px 20px;
 }
