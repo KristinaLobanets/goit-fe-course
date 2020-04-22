@@ -150,7 +150,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 295px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .dreams-title {
@@ -208,6 +208,7 @@ img {
   position: relative;
   width: 124px;
   height: 124px;
+  margin: auto;
 }
 
 .team-item-photo {
@@ -336,9 +337,14 @@ img {
     flex-wrap: wrap;
     padding-bottom: 150px;
   }
+  .head-title {
+    width: 500px;
+  }
 
   .dreams-title {
+    width: 500px;
     padding-bottom: 30px;
+    font-size: 48px;
   }
 
   .dreams-text {
@@ -362,6 +368,10 @@ img {
     margin: 0 auto;
   }
 
+  .head-title {
+    width: 600px;
+  }
+
   .head-holiday {
     min-height: 700px;
   }
@@ -374,6 +384,8 @@ img {
   }
 
   .dreams-title {
+    width: 550px;
+    font-size: 53px;
     padding-bottom: 30px;
   }
 
