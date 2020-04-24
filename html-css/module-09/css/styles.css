@@ -121,20 +121,21 @@ img {
 }
 
 .registration-button {
-  border: none;
   border-radius: 25px;
+  border: 2px solid;
+  border-color: transparent;
   background-color: transparent;
   outline: none;
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 700;
   padding: 11px 19px;
+  margin-bottom: 75px;
 }
 
 .registration-button:hover {
-  border: 2px solid rgb(255, 255, 255, 1);
+  border-color: rgb(255, 255, 255);
 }
-
 .logo {
   font-size: 20px;
   font-family: "Montserrat";
@@ -175,6 +176,11 @@ img {
   padding: 13px 22px;
 }
 
+.link-dreams:hover {
+  color: #ff4e50;
+  background-color: white;
+}
+
 .title {
   font-size: 24px;
   font-family: "Montserrat";
@@ -200,6 +206,14 @@ img {
 .team-item-person {
   display: block;
   position: relative;
+  width: 124px;
+  height: 124px;
+  margin: auto;
+}
+
+.team-item-photo {
+  border-radius: 60px;
+  border: 4px solid white;
 }
 
 .team-item-person::after {
@@ -208,7 +222,7 @@ img {
   width: 33px;
   height: 33px;
   position: absolute;
-  left: 55%;
+  right: 5px;
   bottom: 0;
   background-repeat: no-repeat;
   background-position: center center;
@@ -263,6 +277,7 @@ img {
 }
 
 .team-item-text {
+  width: 250px;
   text-align: center;
   font-size: 14px;
   font-family: "Roboto";
@@ -276,6 +291,11 @@ img {
   border-color: #ff4e50;
   padding: 13px 52px;
   margin: 15px 15px;
+}
+
+.team-link:hover {
+  color: white;
+  background-color: #ff4e50;
 }
 
 .jc-c {
@@ -294,8 +314,6 @@ img {
   .registration {
     justify-content: center;
   }
-
- 
 }
 
 @media (min-width: 768px) {
@@ -303,6 +321,15 @@ img {
     margin-bottom: 150px;
   }
 
+  .head-title {
+    width: 500px;
+  }
+
+  .dreams-title {
+    width: 500px;
+    padding-bottom: 30px;
+    font-size: 48px;
+  }
 
   .head-container {
     display: flex;
@@ -316,20 +343,37 @@ img {
     margin-bottom: 60px;
   }
 
-
   .head-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
+
+  .head-title {
+    width: 600px;
+  }
+
+  .head-holiday {
+    min-height: 700px;
+  }
+
+  .dreams-title {
+    width: 550px;
+    font-size: 53px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 992px) {
-
   .head-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+  }
+
+  .dreams-title {
+    width: 550px;
+    font-size: 53px;
+    padding-bottom: 30px;
   }
 }
