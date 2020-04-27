@@ -340,7 +340,7 @@ h4 {
   justify-content: space-around;
 }
 
-.team__list--block {
+.team__block {
   width: 380px;
   margin-bottom: 40px;
 }
@@ -426,12 +426,12 @@ h4 {
   fill: white;
 }
 
-.team-block:hover {
+.team__block:hover {
   transform: translate(-10px, -10px);
   transition: 200ms linear all;
 }
 
-.team-block:hover .overlay {
+.team__block:hover .team__block__overlay {
   opacity: 1;
   box-shadow: 10px 10px 0px #95e1d3;
   transition: 200ms linear all;
