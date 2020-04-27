@@ -104,7 +104,7 @@ header {
   margin-bottom: 60px;
 }
 
-.head-navigation {
+.navigation__head {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -114,14 +114,14 @@ header {
 .background {
   background-image: url("../Layer 15.png");
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
 }
 .background__linear {
   background-image: linear-gradient(#f38181, #fce38a);
   opacity: 0.85;
 }
 
-.logo {
+.navigation__logo {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -129,11 +129,11 @@ header {
   line-height: 1.2;
 }
 
-.navigation_block {
+.navigation__block {
   text-align: right;
 }
 
-.navigation_item {
+.navigation__item {
   display: inline-block;
   padding-left: 25px;
   font-size: 14px;
@@ -149,11 +149,11 @@ header {
   padding-left: 25px;
 }
 
-.navigation_item:hover {
+.navigation__item:hover {
   color: rgb(252, 227, 138);
 }
 
-.head-title {
+.head__title {
   font-size: 72px;
   font-family: "Kaushan Script";
   color: rgb(255, 255, 255);
@@ -161,7 +161,7 @@ header {
   text-align: center;
 }
 
-.head-name {
+.head__name {
   font-size: 150px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
@@ -171,12 +171,12 @@ header {
   text-align: center;
 }
 
-.head-buttom {
+.head__buttom {
   display: flex;
   justify-content: center;
 }
 
-.head-buttom-block {
+.head__buttom--block {
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
@@ -203,7 +203,7 @@ header {
   text-align: center;
 }
 
-.second-line::after {
+.second__line::after {
   display: block;
   content: "";
   width: 63px;
@@ -212,7 +212,7 @@ header {
   margin: 30px auto;
 }
 
-.first-line {
+.first__line {
   font-size: 24px;
   font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
@@ -220,7 +220,7 @@ header {
   padding-bottom: 20px;
 }
 
-.second-line {
+.second__line {
   display: block;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -237,7 +237,7 @@ header {
   flex-wrap: wrap;
 }
 
-.info-block {
+.info__block {
   width: 320px;
   margin-bottom: 100px;
   display: flex;
@@ -245,7 +245,7 @@ header {
   padding-left: 50px;
 }
 
-.block-photo {
+.block--photo {
   background-image: url("../logo/ALARM.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -253,7 +253,7 @@ header {
   padding-left: 45px;
 }
 
-.block-web {
+.block--web {
   background-image: url("../logo/LINE GRAPH.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@ header {
   padding-left: 45px;
 }
 
-.block-creat {
+.block--creat {
   background-image: url("../logo/COMPUTER _ OK.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -269,7 +269,7 @@ header {
   padding-left: 45px;
 }
 
-.block-seo {
+.block--seo {
   background-image: url("../logo/BOOK 2.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ header {
   padding-left: 45px;
 }
 
-.block-css {
+.block--css {
   background-image: url("../logo/HOME.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ header {
   padding-left: 45px;
 }
 
-.block-digital {
+.block--digital {
   background-image: url("../logo/IMAGE.svg");
   display: inline-block;
   background-repeat: no-repeat;
@@ -303,7 +303,7 @@ h4 {
   text-align: left;
 }
 
-.info-informatoin {
+.info__informatoin {
   font-size: 15px;
   font-family: "Roboto";
   color: rgb(153, 153, 153);
@@ -314,7 +314,7 @@ h4 {
 .team {
 }
 
-.txt-second-block {
+.txt__second__block {
   font-size: 15px;
   font-family: "Roboto";
   color: rgb(153, 153, 153);
@@ -324,12 +324,12 @@ h4 {
   max-width: 950px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   justify-content: space-around;
 }
 
-.team-block {
+.team__list--block {
   width: 380px;
   margin-bottom: 40px;
 }
@@ -338,7 +338,7 @@ h4 {
   margin-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
@@ -347,7 +347,7 @@ h4 {
   text-align: center;
 }
 
-.team-occoupation {
+.team__occoupation {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   color: rgb(153, 153, 153);
@@ -407,14 +407,17 @@ h4 {
   transform: translate(50%, 50%);
 }
 
-.contact_buttons__facebook,
-:hover .contact__icon {
+.contact_buttons__facebook:hover,
+.contact_buttons__twitter:hover,
+.contact_buttons__photo:hover,
+.contact_buttons__insta:hover {
   fill: #ffffff;
 }
 
 .contact_buttons__facebook,
 .contact_buttons__twitter,
-.contact_buttons__photo {
+.contact_buttons__photo,
+.contact_buttons__insta {
   border-right: 1px solid #f38181;
 }
 
@@ -425,12 +428,17 @@ h4 {
   background-color: #f38181;
 }
 
-.contact_buttons__facebook:hover .contact_icon {
-  fill: #ffffff;
+.contact_buttons__facebook:hover {
+  fill: #f38181;
 }
 
 .contact_icon_svg:hover {
   fill: #ffffff;
+}
+
+.team-block:hover {
+  transform: translate(-10px, -10px);
+  transition: 200ms linear all;
 }
 
 .team-block:hover .overlay {
