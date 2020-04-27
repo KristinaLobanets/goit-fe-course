@@ -146,8 +146,7 @@ header {
 }
 
 .navigation__item--icon {
-  width: 10px;
-  height: 10px;
+  padding-left: 25px;
 }
 
 .navigation_item:hover {
