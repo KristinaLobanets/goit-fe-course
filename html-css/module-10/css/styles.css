@@ -69,8 +69,8 @@ ol {
 
 img {
   display: block;
+  margin: 0 auto;
   max-width: 100%;
-  height: auto;
 }
 
 *,
@@ -113,12 +113,19 @@ header {
 
 .background {
   background-image: url("../Layer 15.png");
-  max-width: 100%;
-  max-height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
 }
+
 .background__linear {
-  background-image: linear-gradient(#f38181, #fce38a);
-  opacity: 0.85;
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  width: 100%;
+  height: 100%;
 }
 
 .navigation__logo {
@@ -143,14 +150,13 @@ header {
   text-transform: uppercase;
   line-height: 1.2;
   text-decoration: none;
-}
-
-.navigation__item--icon {
-  padding-left: 25px;
+  color: white;
+  fill: white;
 }
 
 .navigation__item:hover {
   color: rgb(252, 227, 138);
+  fill: rgb(252, 227, 138);
 }
 
 .head__title {
@@ -187,6 +193,11 @@ header {
   border: 3px solid white;
   padding: 15px 25px;
   margin-bottom: 50px;
+}
+
+.head__buttom--block:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(252, 227, 138);
 }
 
 .conteiner {
@@ -334,7 +345,7 @@ h4 {
   margin-bottom: 40px;
 }
 
-.team-image {
+.team__image {
   margin-bottom: 30px;
 }
 
@@ -358,11 +369,11 @@ h4 {
 
 /*hover*/
 
-.card-box {
+.team__block--cardbox {
   position: relative;
 }
 
-.overlay {
+.team__block__overlay {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -376,14 +387,6 @@ h4 {
   width: 100%;
   height: 100%;
   opacity: 0;
-}
-
-.overlay-btn {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
-  width: 58px;
-  height: 58px;
 }
 
 .contact_buttons__facebook,
@@ -407,18 +410,12 @@ h4 {
   transform: translate(50%, 50%);
 }
 
-.contact_buttons__facebook:hover,
-.contact_buttons__twitter:hover,
-.contact_buttons__photo:hover,
-.contact_buttons__insta:hover {
-  fill: #ffffff;
-}
-
 .contact_buttons__facebook,
 .contact_buttons__twitter,
 .contact_buttons__photo,
 .contact_buttons__insta {
   border-right: 1px solid #f38181;
+  fill: #f38181;
 }
 
 .contact_buttons__facebook:hover,
@@ -426,14 +423,7 @@ h4 {
 .contact_buttons__photo:hover,
 .contact_buttons__insta:hover {
   background-color: #f38181;
-}
-
-.contact_buttons__facebook:hover {
-  fill: #f38181;
-}
-
-.contact_icon_svg:hover {
-  fill: #ffffff;
+  fill: white;
 }
 
 .team-block:hover {
@@ -447,7 +437,7 @@ h4 {
   transition: 200ms linear all;
 }
 
-.footer-txt {
+.footer--txt {
   padding-top: 15px;
   font-size: 14px;
   font-family: "Montserrat";
@@ -455,14 +445,14 @@ h4 {
   line-height: 1.2;
 }
 
-.footer-logo {
+.footer--logo {
   color: #f38181;
   font-size: 14px;
   font-family: "Montserrat";
   text-decoration: none;
 }
 
-.form-block {
+.form--block {
   display: flex;
   justify-content: right;
 }
@@ -496,7 +486,7 @@ h4 {
   color: rgb(204, 204, 204);
 }
 
-.footer-div {
+.footer--div {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgb(231, 231, 231);
