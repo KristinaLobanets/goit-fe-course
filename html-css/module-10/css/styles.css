@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -51,10 +53,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -76,12 +80,14 @@ img {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -105,7 +111,11 @@ header {
 }
 
 .navigation__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 120px;
@@ -119,6 +129,18 @@ header {
 }
 
 .background__linear {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background-image: linear-gradient(
     90deg,
     rgba(252, 227, 138, 0.9) 0%,
@@ -178,7 +200,11 @@ header {
 }
 
 .head__buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -243,15 +269,22 @@ header {
 }
 
 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .info__block {
   width: 320px;
   margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-left: 50px;
 }
@@ -336,7 +369,10 @@ h4 {
 }
 
 .team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -374,11 +410,32 @@ h4 {
 }
 
 .team__block__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0.8)),
+    to(rgba(243, 129, 129, 0.8))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0.8) 0%,
+    rgba(243, 129, 129, 0.8) 100%
+  );
   background-image: linear-gradient(
     90deg,
     rgba(252, 227, 138, 0.8) 0%,
@@ -427,13 +484,20 @@ h4 {
 }
 
 .team__block:hover {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
+  -webkit-transition: 200ms linear all;
+  -o-transition: 200ms linear all;
   transition: 200ms linear all;
 }
 
 .team__block:hover .team__block__overlay {
   opacity: 1;
+  -webkit-box-shadow: 10px 10px 0px #95e1d3;
   box-shadow: 10px 10px 0px #95e1d3;
+  -webkit-transition: 200ms linear all;
+  -o-transition: 200ms linear all;
   transition: 200ms linear all;
 }
 
@@ -453,7 +517,11 @@ h4 {
 }
 
 .form--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
   justify-content: right;
 }
 
@@ -482,12 +550,32 @@ h4 {
   border-right: none;
 }
 
+.subscribe-form__input::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.subscribe-form__input::-moz-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.subscribe-form__input:-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.subscribe-form__input::-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
 .subscribe-form__input::placeholder {
   color: rgb(204, 204, 204);
 }
 
 .footer--div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   border-top: 1px solid rgb(231, 231, 231);
   padding: 22px 22px;
