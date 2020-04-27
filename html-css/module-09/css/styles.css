@@ -118,6 +118,12 @@ img {
 
 .head-container {
   margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.registration {
 }
 
 .registration-button {
@@ -195,6 +201,7 @@ img {
   margin-bottom: 14px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team-item {
