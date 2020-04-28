@@ -279,12 +279,12 @@ header {
 .services {
 }
 
-.title {
+.title__block {
   margin-bottom: 90px;
   text-align: center;
 }
 
-.second__line::after {
+.stitle__block--txt::after {
   display: block;
   content: "";
   width: 63px;
@@ -293,7 +293,7 @@ header {
   margin: 30px auto;
 }
 
-.first__line {
+.title__block--name {
   font-size: 24px;
   font-family: "Kaushan Script";
   color: rgb(51, 51, 51);
@@ -301,7 +301,7 @@ header {
   padding-bottom: 20px;
 }
 
-.second__line {
+.title__block--txt {
   display: block;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -402,7 +402,7 @@ h4 {
 .team {
 }
 
-.txt__second__block {
+.txt__block {
   font-size: 15px;
   font-family: "Roboto";
   color: rgb(153, 153, 153);
@@ -490,10 +490,10 @@ h4 {
   opacity: 0;
 }
 
-.contact_buttons__facebook,
-.contact_buttons__twitter,
-.contact_buttons__photo,
-.contact_buttons__insta {
+.contact__buttons__facebook,
+.contact__buttons__twitter,
+.contact__buttons__photo,
+.contact__buttons__insta {
   height: 56px;
   width: 56px;
   background-color: #fce38a;
@@ -502,6 +502,8 @@ h4 {
   border: none;
   outline: none;
   position: relative;
+  border-right: 1px solid #f38181;
+  fill: #f38181;
 }
 
 .contact__icon {
@@ -511,18 +513,10 @@ h4 {
   transform: translate(50%, 50%);
 }
 
-.contact_buttons__facebook,
-.contact_buttons__twitter,
-.contact_buttons__photo,
-.contact_buttons__insta {
-  border-right: 1px solid #f38181;
-  fill: #f38181;
-}
-
-.contact_buttons__facebook:hover,
-.contact_buttons__twitter:hover,
-.contact_buttons__photo:hover,
-.contact_buttons__insta:hover {
+.contact__buttons__facebook:hover,
+.contact__buttons__twitter:hover,
+.contact__buttons__photo:hover,
+.contact__buttons__insta:hover {
   background-color: #f38181;
   fill: white;
 }
@@ -545,7 +539,7 @@ h4 {
   transition: 200ms linear all;
 }
 
-.footer--txt {
+.footer__block--txt {
   padding-top: 15px;
   font-size: 14px;
   font-family: "Montserrat";
@@ -553,14 +547,14 @@ h4 {
   line-height: 1.2;
 }
 
-.footer--logo {
+.footer__logo {
   color: #f38181;
   font-size: 14px;
   font-family: "Montserrat";
   text-decoration: none;
 }
 
-.form--block {
+.form__block--btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,7 +563,7 @@ h4 {
   justify-content: right;
 }
 
-.subscribe-form__btn {
+.subscribe__form__btn {
   background-color: rgb(149, 225, 211);
   border: #95e1d3 2px solid;
   width: 150px;
@@ -583,7 +577,7 @@ h4 {
   text-align: center;
 }
 
-.subscribe-form__input {
+.subscribe__form__input {
   font-size: 15px;
   font-family: "Roboto";
   color: black;
@@ -614,7 +608,7 @@ h4 {
   color: rgb(204, 204, 204);
 }
 
-.footer--div {
+.footer__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
