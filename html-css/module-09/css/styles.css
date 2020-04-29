@@ -312,7 +312,6 @@ img {
 
 @media (max-width: 767px) {
   .registration {
-    margin-bottom: 115px;
   }
   .team-item:not(:last-child) {
     margin-bottom: 28px;
