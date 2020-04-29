@@ -1,0 +1,88 @@
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  &__block {
+    width: 320px;
+    margin-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-left: 50px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: left;
+  }
+
+  &__informatoin {
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: rgb(153, 153, 153);
+    line-height: 2;
+    text-align: left;
+  }
+}
+
+.services {
+  &__block--photo {
+    background-image: url('../images/logo/ALARM.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+
+  &__block--web {
+    background-image: url('../images/logo/LINE GRAPH.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+
+  &__block--creat {
+    background-image: url('../images/logo/COMPUTER _ OK.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+
+  &__block--seo {
+    background-image: url('../images/logo/BOOK 2.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+
+  &__block--css {
+    background-image: url('../images/logo/HOME.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+
+  &__block--digital {
+    background-image: url('../images/logo/IMAGE.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 45px;
+  }
+}

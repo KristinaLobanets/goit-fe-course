@@ -1,0 +1,165 @@
+.head {
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 72px;
+    font-family: 'Kaushan Script';
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 150px;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+  }
+
+  &__buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &__buttom--block {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+    border: 3px solid white;
+    padding: 15px 25px;
+    margin-bottom: 50px;
+  }
+
+  &__buttom--block:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(252, 227, 138);
+  }
+}
+
+.navigation {
+  &__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 120px;
+  }
+  &__logo {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__block {
+    text-align: right;
+  }
+
+  &__item {
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    color: white;
+    fill: white;
+  }
+
+  &__item:hover {
+    color: rgb(252, 227, 138);
+    fill: rgb(252, 227, 138);
+  }
+}
+
+.background {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  margin-bottom: 45px;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient
+      (
+        linear,
+        left bottom,
+        left top,
+        from (rgba(252, 227, 138, 0.8)),
+        to (rgba(243, 129, 129, 0.8))
+      ),
+    url('../images/foto/Layer15.png');
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.8) 0%,
+      rgba(243, 129, 129, 0.8) 100%
+    ),
+    url('../images/foto/Layer15.png');
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.8)),
+      to(rgba(243, 129, 129, 0.8))
+    ),
+    url('../images/foto/Layer15.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.8) 0%,
+      rgba(243, 129, 129, 0.8) 100%
+    ),
+    url('../images/foto/Layer15.png');
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .background {
+    background-image: -webkit-gradient
+        (
+          linear,
+          left bottom,
+          left top,
+          from (rgba(252, 227, 138, 0.8)),
+          to (rgba(243, 129, 129, 0.8))
+        ),
+      url('../images/foto/Layer15@2x.png');
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.8) 0%,
+        rgba(243, 129, 129, 0.8) 100%
+      ),
+      url('../images/foto/Layer15@2x.png');
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.8)),
+        to(rgba(243, 129, 129, 0.8))
+      ),
+      url('../images/foto/Layer15@2x.png');
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.8) 0%,
+        rgba(243, 129, 129, 0.8) 100%
+      ),
+      url('../images/foto/Layer15@2x.png');
+  }
+}
