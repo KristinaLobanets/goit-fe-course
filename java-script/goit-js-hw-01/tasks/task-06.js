@@ -6,8 +6,11 @@ let total = 0;
 while (true) {
   input = prompt("Введите число!");
 
+  if (input === null) {
+    alert("Thanks!");
+    break;
+  }
   input = Number(input);
-
   total += input;
 }
 
