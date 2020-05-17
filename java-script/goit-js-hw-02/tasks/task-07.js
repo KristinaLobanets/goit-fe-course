@@ -1,5 +1,5 @@
 "use strict";
-//pass
+
 const passwords = ["123", "111", "qwerty", "qazwsx"];
 let attempts = 3;
 let cancel = 0;
