@@ -8,10 +8,10 @@
 //  содержатся как свойства объекта
 //   в формате "имя":"кол-во задач".
 
-const findBestEmployee = function (employees) {
-  let bestEmployee = 0;
-  let maxEmployee;
+let bestEmployee = 0;
+let maxEmployee;
 
+const findBestEmployee = function (employees) {
   const taskForWork = Object.values(findBestEmployee);
 
   const bestResult = [taskForWork];

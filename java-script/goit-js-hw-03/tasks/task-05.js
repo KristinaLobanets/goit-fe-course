@@ -14,7 +14,17 @@ const products = [
 ];
 
 const getAllPropValues = function (arr, prop) {
-  // твой код
+  const values = [];
+
+  for (const item of arr) {
+    let value = item[prop];
+
+    if (value != undefined) {
+      values.push(value);
+    }
+  }
+
+  return values;
 };
 
 /*

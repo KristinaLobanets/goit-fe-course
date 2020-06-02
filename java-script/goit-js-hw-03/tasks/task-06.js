@@ -16,7 +16,15 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-  // твой код
+  let totalPrice = 0;
+
+  for (let i = 0; i < allProdcuts.length; i += 1) {
+    if (allProdcuts[i]["name"] === productName) {
+      totalPrice = allProdcuts[i]["price"] * allProdcuts[i]["quantity"];
+    }
+  }
+
+  return totalPrice;
 };
 
 /*
