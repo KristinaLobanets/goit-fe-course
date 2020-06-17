@@ -8,12 +8,16 @@
 //     могут быть в произвольном регистре.
 
 const checkForSpam = function (message) {
-  // твой код
+  const spam = "spam";
+  const sale = "sale";
+  let littleMessage = message.toLowerCase();
+  if (littleMessage.includes(spam) || littleMessage.includes(sale)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(checkForSpam("Latest technology news")); // false
 
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
