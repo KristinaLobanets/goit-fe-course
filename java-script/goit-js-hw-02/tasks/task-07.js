@@ -3,17 +3,13 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 const isLoginValid = function (login) {
   if (login.length < 4 || login.length > 16) {
     return false;
-  } else {
-    return true;
   }
 };
 
 const isLoginUnique = function (allLogins, login) {
   for (const newLogin of allLogins)
-    if (login === newLogin) {
+    if (newLogin === login) {
       return false;
-    } else {
-      return true;
     }
 };
 
