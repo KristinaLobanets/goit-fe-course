@@ -1,14 +1,26 @@
 "use strict";
 
-//Задание 1
+const user = {
+  name: "Mango",
+  age: 20,
+  hobby: "html",
+  premium: true,
+};
 
-//Напиши скрипт, который, для объекта user, последовательно:
+user.mood = "happy";
 
-//добавляет поле mood со значением 'happy'
+// console.log(user);
 
-//заменяет значение hobby на 'skydiving'
+user.hobby = "skydiving";
 
-//заменяет значение premium на false
+// console.log(user);
 
-//выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
+user.premium = false;
 
+// console.log(user);
+
+// for (key of user) {
+//   console.log(key);
+// }
+
+// console.log(`${key}: ${value}`);
