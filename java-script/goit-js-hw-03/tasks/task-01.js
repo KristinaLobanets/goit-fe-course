@@ -19,8 +19,7 @@ user.premium = false;
 
 // console.log(user);
 
-// for (key of user) {
-//   console.log(key);
-// }
-
-// console.log(`${key}: ${value}`);
+const values = Object.keys(user);
+for (const value of values) {
+  console.log(`${value} : ${user[value]}`);
+}
