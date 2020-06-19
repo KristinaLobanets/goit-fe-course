@@ -1,4 +1,5 @@
 "use strict";
+// done
 
 const countTotalSalary = function (employees) {
   const salary = Object.values(employees);

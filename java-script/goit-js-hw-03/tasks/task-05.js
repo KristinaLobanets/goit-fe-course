@@ -13,12 +13,11 @@ const products = [
 ];
 
 const getAllPropValues = function (arr, prop) {
-  // твой код
+  for (const element of arr) {
+    console.log(element);
+  }
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(getAllPropValues(products, "name")); // ['Радар', 'Сканер', 'Дроид', 'Захват']
 
 console.log(getAllPropValues(products, "quantity")); // [4, 3, 7, 2]
