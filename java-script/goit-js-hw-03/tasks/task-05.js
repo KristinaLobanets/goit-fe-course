@@ -13,9 +13,16 @@ const products = [
 ];
 
 const getAllPropValues = function (arr, prop) {
+  let keys;
   for (const element of arr) {
-    console.log(element);
+    keys = Object.entries(element);
   }
+  for (const key of keys) {
+    console.log(key);
+  }
+  let name;
+  let quantity;
+  let category;
 };
 
 console.log(getAllPropValues(products, "name")); // ['Радар', 'Сканер', 'Дроид', 'Захват']
