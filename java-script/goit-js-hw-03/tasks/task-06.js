@@ -1,8 +1,5 @@
 "use strict";
-
-// Напиши функцию calculateTotalPrice(allProdcuts, productName),
-//  которая получает массив объектов и имя продукта (значение свойства name).
-//   Возвращает общую стоимость продукта (цена * количество).
+// done
 const products = [
   { name: "Радар", price: 1300, quantity: 4 },
   { name: "Сканер", price: 2700, quantity: 3 },
@@ -11,14 +8,13 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
+  let totalPrice;
   for (const key of allProdcuts) {
-    console.log(key);
+    if (key.name === productName) {
+      totalPrice = key.price * key.quantity;
+    }
   }
-  // const productPrise = Object.values(products.price);
-  // console.log(productPrise);
-  // const productQuantity = products.quantity
-  // const totalPrise = productPrise*productQuantity
-  // return totalPrise
+  return totalPrice;
 };
 
 console.log(calculateTotalPrice(products, "Радар")); // 5200
