@@ -12,26 +12,32 @@
 // удаляет его из текущих
 
 class Storage {
-  constructor() {}
+  constructor(items = []) {
+    this.items = items;
+  }
+
+  getItems() {
+    return this.items;
+  }
+
+  addItem(item) {
+    this.items.push(item);
+  }
+
+  removeItem(item) {
+    for (const oneItem of items) {
+      if (oneItem === item) {
+        const index = items.indexOf(oneItem);
+        items.splice(index, 1);
+      }
+    }
+  }
 }
-
-getItems(){
-
-};
-
-addItem(item) {
-
-};
-
-removeItem(item) {
-
-};
-
 const storage = new Storage([
-  'Нанитоиды',
-  'Пролонгер',
-  'Железные жупи',
-  'Антигравитатор',
+  "Нанитоиды",
+  "Пролонгер",
+  "Железные жупи",
+  "Антигравитатор",
 ]);
 
 const items = storage.getItems();

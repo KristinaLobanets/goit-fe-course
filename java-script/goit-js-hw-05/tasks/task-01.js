@@ -7,11 +7,12 @@
 //  который выводит в консоль значения
 //полей login и email объекта который его вызвал.
 
-const Account = function (name) {
-  this.name = name;
+const Account = function (obj) {
+  this.login = obj.login;
+  this.email = obj.email;
 };
 Account.prototype.getInfo = function () {
-  console.log(this.name);
+  console.log(`Login: ${this.login}, Email:${this.email}`);
 };
 
 console.log(Account.prototype.getInfo); // function
