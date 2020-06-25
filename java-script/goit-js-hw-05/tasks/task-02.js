@@ -1,13 +1,30 @@
 "use strict";
-Напиши класс User для создания пользователя со следующим свойствами:
+// Напиши класс User для создания пользователя со
+// следующим свойствами:
 
-name - строка
-age - число
-followers - число
-Добавь метод getInfo(), который, выводит строку: User ${имя} is ${возраст} years old and has ${кол-во фоловеров} followers
+// name - строка
+// age - число
+// followers - число
+// Добавь метод getInfo(), который,
+// выводит строку: User ${имя} is ${возраст}
+// years old and has ${кол-во фоловеров} followers
+
+class User {
+  constructor(oneUser) {
+    this.name = oneUser.name;
+    this.age = oneUser.age;
+    this.followers = oneUser.followers;
+  }
+
+  getInfo() {
+    console.log(
+      `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
+    );
+  }
+}
 
 const mango = new User({
-  name: 'Mango',
+  name: "Mango",
   age: 2,
   followers: 20,
 });
@@ -15,7 +32,7 @@ const mango = new User({
 mango.getInfo(); // User Mango is 2 years old and has 20 followers
 
 const poly = new User({
-  name: 'Poly',
+  name: "Poly",
   age: 3,
   followers: 17,
 });
