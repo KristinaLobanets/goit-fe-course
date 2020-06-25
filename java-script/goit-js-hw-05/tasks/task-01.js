@@ -5,13 +5,6 @@
 //В prototype функции-конструктора добавь метод getInfo(), который выводит в консоль значения
 //полей login и email объекта который его вызвал.
 
-const Account = function (name) {
-  this.name = name;
-};
-Account.prototype.getInfo = function () {
-  console.log(this.name);
-};
-
 console.log(Account.prototype.getInfo); // function
 
 const mango = new Account({
