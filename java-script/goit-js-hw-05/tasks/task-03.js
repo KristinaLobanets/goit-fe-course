@@ -12,7 +12,7 @@
 // удаляет его из текущих
 
 class Storage {
-  constructor(items = []) {
+  constructor(items) {
     this.items = items;
   }
 
@@ -21,7 +21,7 @@ class Storage {
   }
 
   addItem(item) {
-    this.items.push(item);
+    return this.items.push(item);
   }
 
   removeItem(item) {
