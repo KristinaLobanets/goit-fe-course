@@ -3,7 +3,7 @@ import users from "./module.js";
 // по email (поле email, он уникальный).
 
 const getUserWithEmail = (users, email) => {
-  // твой код
+  return users.find((user) => user.email === email);
 };
 
 console.log(getUserWithEmail(users, "shereeanthony@kog.com")); // {объект пользователя Sheree Anthony}
