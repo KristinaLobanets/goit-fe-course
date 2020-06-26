@@ -3,7 +3,7 @@ import users from "./module.js";
 //  пользователей (поле isActive).
 
 const getInactiveUsers = (users) => {
-  // твой код
+  // return (inactiveUsers = users.filter((user) => !user.isActive));
 };
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
