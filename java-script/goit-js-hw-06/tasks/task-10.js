@@ -1,5 +1,11 @@
 import users from "./module.js";
-const getUserNames = (users) => {};
+// Получить массив всех умений всех пользователей (поле skills),
+// при этом не должно быть повторяющихся умений и они
+//  должны быть отсортированы в алфавитном порядке.
 
-console.log(getUserNames(users));
-// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony'
+const getSortedUniqueSkills = (users) => {
+  // твой код
+};
+
+console.log(getSortedUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]

@@ -1,5 +1,9 @@
 import users from "./module.js";
-const getUserNames = (users) => {};
+// Массив имен всех пользователей у которых есть друг с указанным именем.
 
-console.log(getUserNames(users));
-// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony'
+const getUsersWithFriend = (users, friendName) => {
+  // твой код
+};
+
+console.log(getUsersWithFriend(users, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+console.log(getUsersWithFriend(users, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
