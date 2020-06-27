@@ -9,7 +9,7 @@ const getSortedUniqueSkills = (users) => {
     return acc;
   }, []);
 
-  const sortSkills = skills.filter(function (item, index) {
+  const sortSkills = skills.filter((item, index) => {
     return skills.indexOf(item) == index;
   });
   return sortSkills.sort();
