@@ -1,16 +1,17 @@
 const info__health = document.querySelector(".info__health");
 const newGame = document.querySelector("#start");
+let Timer;
 
 const reduseInfo = () => {
   info__health.innerText = Number(info__health.innerText) - 1;
-  setTimeout(reduseInfo, 1000);
+  Timer = setTimeout(reduseInfo, 1000);
 };
 newGame.addEventListener("click", reduseInfo);
 
 const stopButton = document.querySelector(".Stop");
 
 const stopFunc = () => {
-  clearTimeout(reduseInfo);
+  clearTimeout(Timer);
 };
 stopButton.addEventListener("click", stopFunc);
 
