@@ -1,11 +1,30 @@
 const info__health = document.querySelector(".info__health");
-console.dir(info__health);
-const start = document.querySelector(".start");
-add_info.addEventListener("click", addInfo);
+const newGame = document.querySelector("#start");
 
+const reduseInfo = () => {
+  info__health.innerText = Number(info__health.innerText) - 1;
+  setTimeout(reduseInfo, 1000);
+};
+newGame.addEventListener("click", reduseInfo);
 
+const stopButton = document.querySelector(".Stop");
 
+const stopFunc = () => {
+  clearTimeout(reduseInfo);
+};
+stopButton.addEventListener("click", stopFunc);
 
+const park = document.querySelector("#park");
+
+const parkFunc = () => {
+  info__health.innerText = Number(info__health.innerText) + 10;
+};
+park.addEventListener("click", parkFunc);
+
+// const info__health = document.querySelector(".info__health");
+// console.dir(info__health);
+// const start = document.querySelector(".start");
+// add_info.addEventListener("click", addInfo);
 
 // const info = document.querySelector(".info");
 // const add_info = document.querySelector(".add_info");
@@ -19,4 +38,3 @@ add_info.addEventListener("click", addInfo);
 
 // function addInfo() {
 //   info.innerText = Number(info.innerText) + 100;
-}
