@@ -17,77 +17,62 @@
   </head>
   <body>
     <header class="name-game container">
-      <button class="new__game" id="start">New Game</button>
+      <button class="new__game" id="start">Start</button>
       <button class="Stop">Stop</button>
     </header>
     <section class="information container"></section>
-    <title class="information__block">Жизненньие показатели</title>
+    <title class="information__block">Симулятор Ронни</title>
     <p class="info__health--title">
       Здоровье: <span class="info__health">100</span>
     </p>
-    <p class="info__happy--title">Счастье: <span class="info__happy"></span></p>
-    <p class="info__bank--title">Счет:<span class="info__bank"></span></p>
+    <p class="info__happy--title">
+      Счастье: <span class="info__happy">100</span>
+    </p>
+    <p class="info__bank--title">Корм: <span class="info__bank">100</span></p>
     <p class="info__tired--title">
-      Усталость: <span class="info__tired"></span>
+      Усталость: <span class="info__tired">100</span>
     </p>
     <section class="buttoms-section container">
-      <div class="block__health">
-        <button class="buttom__health" id="park">
-          Гулять в парке
-          <p class="txt">+ 10 здоровье +10 счастье -10 усталось</p>
-        </button>
-        <button class="buttom__health">
-          Полежать в больничке
-          <p class="txt">+ 20 здоровье -20 банк</p>
-        </button>
-        <button class="buttom__health">
-          Пересадить печень
-          <p class="txt">+ 30 здоровье - 30 банк</p>
-        </button>
-      </div>
-      <div class="block__happy">
-        <button class="buttom__happy">
-          Уйти в запой с бомжами
-          <p class="txt">+ 10 счастье -10 здоровье</p>
-        </button>
-        <button class="buttom__happy">
-          Встретится с друзьями
-          <p class="txt">+ 20 счастье -20 банк</p>
-        </button>
+      <button data-id="01" class="buttom__health">
+        Гулять в парке + 10 здоровье +10 счастье -10 усталось
+      </button>
+      <button data-id="02" class="buttom__health">
+        Скушать витаминку + 20 здоровье -20 корм
+      </button>
+      <button data-id="03" class="buttom__health">
+        Сделать прививку + 30 здоровье - 30 банк
+      </button>
 
-        <button class="buttom__happy">
-          Поехать в отпуск
-          <p class="txt">+ 30 счастье -30 банк</p>
-        </button>
-      </div>
-      <div class="block__bank">
-        <button class="buttom__bank">
-          Собирать бутьілки
-          <p class="txt">-10 счастье +30 банк</p>
-        </button>
-        <button class="buttom__bank">
-          Работать
-          <p class="txt">-20 счастье -10 усталость +60 банк</p>
-        </button>
-        <button class="buttom__bank">
-          Продать почку соседа
-          <p class="txt">-30 счастье +90 банк</p>
-        </button>
-      </div>
-      <div class="block__tired">
-        <button class="buttom__tired">
-          Спать
-          <p class="txt">+ 20 усталость +10 здоровье</p>
-        </button>
-        <button class="buttom__tired">
-          Чилить
-          <p class="txt">+ 30 усталость +10 счастье</p>
-        </button>
-        <button class="buttom__tired">
-          Курить бамбук
-          <p class="txt">+ 30 усталость -10 здоровье</p>
-        </button>
-      </div>
+      <button data-id="04" class="buttom__happy">
+        Гонять котов + 10 счастье -10 здоровье
+      </button>
+      <button data-id="05" class="buttom__happy">
+        Облаять соседей + 20 счастье
+      </button>
+
+      <button data-id="06" class="buttom__happy">
+        Порвать носки + 30 счастье -30 банк
+      </button>
+
+      <button data-id="07" class="buttom__bank">
+        Тьірить с мусорки +30 корм
+      </button>
+      <button data-id="08" class="buttom__bank">
+        Клянчить еду -10 усталость +60 корм
+      </button>
+      <button data-id="09" class="buttom__bank">
+        Украсть что-то со стола +90 корм
+      </button>
+
+      <button data-id="10" class="buttom__tired">
+        Спать + 20 усталость +10 здоровье
+      </button>
+      <button data-id="11" class="buttom__tired">
+        Смотреть телик + 30 усталость +10 счастье
+      </button>
+      <button data-id="12" class="buttom__tired">
+        Требовать чухать пузо + 60 усталость
+      </button>
     </section>
     <script type="module" src="./js/index.js"></script>
   </body>
