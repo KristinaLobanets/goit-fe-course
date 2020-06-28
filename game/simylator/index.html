@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="name-game container">
+      <button class="new__game" id="start">New Game</button>
+      <button class="Stop">Stop</button>
+    </header>
+    <section class="information container"></section>
+    <title class="information__block">Жизненньие показатели</title>
+    <p class="info__health--title">
+      Здоровье: <span class="info__health"></span>
+    </p>
+    <p class="info__happy--title">Счастье: <span class="info__happy"></span></p>
+    <p class="info__bank--title">Счет:<span class="info__bank"></span></p>
+    <p class="info__tired--title">
+      Усталость: <span class="info__tired"></span>
+    </p>
+    <section class="buttoms-section container">
+      <div class="block__health">
+        <button class="buttom__health">
+          Гулять в парке
+          <p class="txt">+ 10 здоровье +10 счастье -10 усталось</p>
+        </button>
+        <button class="buttom__health">
+          Полежать в больничке
+          <p class="txt">+ 20 здоровье -20 банк</p>
+        </button>
+        <button class="buttom__health">
+          Пересадить печень
+          <p class="txt">+ 30 здоровье - 30 банк</p>
+        </button>
+      </div>
+      <div class="block__happy">
+        <button class="buttom__happy">
+          Уйти в запой с бомжами
+          <p class="txt">+ 10 счастье -10 здоровье</p>
+        </button>
+        <button class="buttom__happy">
+          Встретится с друзьями
+          <p class="txt">+ 20 счастье -20 банк</p>
+        </button>
+
+        <button class="buttom__happy">
+          Поехать в отпуск
+          <p class="txt">+ 30 счастье -30 банк</p>
+        </button>
+      </div>
+      <div class="block__bank">
+        <button class="buttom__bank">
+          Собирать бутьілки
+          <p class="txt">-10 счастье +30 банк</p>
+        </button>
+        <button class="buttom__bank">
+          Работать
+          <p class="txt">-20 счастье -10 усталость +60 банк</p>
+        </button>
+        <button class="buttom__bank">
+          Продать почку соседа
+          <p class="txt">-30 счастье +90 банк</p>
+        </button>
+      </div>
+      <div class="block__tired">
+        <button class="buttom__tired">
+          Спать
+          <p class="txt">+ 20 усталость +10 здоровье</p>
+        </button>
+        <button class="buttom__tired">
+          Чилить
+          <p class="txt">+ 30 усталость +10 счастье</p>
+        </button>
+        <button class="buttom__tired">
+          Курить бамбук
+          <p class="txt">+ 30 усталость</p>
+        </button>
+      </div>
+    </section>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
