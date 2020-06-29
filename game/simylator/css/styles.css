@@ -48,7 +48,7 @@ p {
 }
 
 .container {
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
 }
 
@@ -69,6 +69,8 @@ button {
   margin-right: 10px;
   font-size: 14px;
   background-color: #d983e9;
+  border-radius: 15px;
+  border-color: white;
 }
 .buttoms-section {
 }
