@@ -53,13 +53,23 @@ p {
 }
 
 header {
-  padding-bottom: 50px;
-  margin-bottom: 60px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.info__health--title {
+.new__game {
+  height: 30px;
+}
+
+.Stop {
+  height: 30px;
+}
+
+.photo {
+  background-image: url("../image/ronny2.jpg");
+  width: 165px;
+  height: 250px;
 }
 
 button {
