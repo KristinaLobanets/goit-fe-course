@@ -29,23 +29,16 @@ const images = [
   },
 ];
 
-const galleryList = (image) => {
-  const listRef = document.createElement("li");
-  listRef.classList.add("gallery-list-js");
-
-  const imageRef = document.createElement("img");
-  imageRef.classList.add("gallery-list__animal-js");
-  imageRef.src = image.url;
-  imageRef.alt = image.alt;
-
-  listRef.append(imageRef);
-  return listRef;
+const createElement = ({ url, alt }) => {
+  return `<li ><img src=${url} alt=${alt}></li>`;
 };
 
-const imageGalleryCards = images.map((image) => galleryList(image));
+const ihatereduce = images.reduce(
+  (acc, image) => acc + createElement(image),
+  ""
+);
 
-const containerRef = document.querySelector("#gallery-js");
-containerRef.classList.add("gallery-js");
-console.log(containerRef);
+const task3 = document.querySelector("#gallery-js");
+console.log(task3);
 
-containerRef.append(...imageGalleryCards);
+task3.insertAdjacentHTML("afterbegin", ihatereduce);
