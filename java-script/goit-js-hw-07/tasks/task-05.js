@@ -9,7 +9,7 @@ const emptyInput = "незнакомец";
 
 input.addEventListener("input", (event) => {
   nameInput.textContent = event.target.value;
-  if (input.value.length === 0) {
+  if (input.value === "") {
     nameInput.textContent = "незнакомец";
   }
 });

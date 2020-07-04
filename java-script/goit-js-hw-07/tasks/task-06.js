@@ -10,13 +10,13 @@
 const inputForm = document.getElementById("validation-input");
 const validation = Number(inputForm.getAttribute("data-length"));
 
-console.log(validation);
-console.log(inputForm.value.length);
-
 const check = () => {
   if (inputForm.value.length > validation) {
     inputForm.classList.remove("invalid");
     inputForm.classList.add("valid");
-  } else inputForm.classList.add("invalid");
+  } else {
+    inputForm.classList.add("invalid");
+    inputForm.classList.remove("valid");
+  }
 };
 inputForm.addEventListener("blur", check);
