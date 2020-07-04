@@ -8,9 +8,9 @@ const lightbox = document.querySelector(".js-lightbox");
 const closeButton = document.querySelector(
   'button[data-action="close-lightbox"]'
 );
-
 const closeDiv = document.querySelector(".lightbox__overlay");
-
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 console.log(closeDiv);
 
 const markUP = (item) => {
@@ -52,3 +52,27 @@ const closeModal = (event) => {
 
 // closeDiv.addEventListener("click", closeModal);
 closeButton.addEventListener("click", closeModal);
+
+const prevFunk = (event) => {
+  const result = gallery.find((item) => item.original === image.src);
+  let index = gallery.indexOf(result) - 1;
+  if (index < 0) {
+    index = gallery.length - 1;
+  }
+  image.src = gallery[index].original;
+  image.alt = gallery[index].description;
+};
+
+prev.addEventListener("click", prevFunk);
+
+const nextFunk = (event) => {
+  const result = gallery.find((item) => item.original === image.src);
+  let index = gallery.indexOf(result) + 1;
+  if (index > gallery.length - 1) {
+    index = 0;
+  }
+  image.src = gallery[index].original;
+  image.alt = gallery[index].description;
+};
+
+next.addEventListener("click", nextFunk);
