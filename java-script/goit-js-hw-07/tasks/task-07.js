@@ -11,5 +11,5 @@ const runner = {
 
 runner.input.addEventListener("input", handleInputRange);
 function handleInputRange(event) {
-  runner.span.style.fontSize = event.currentTarget.value + "px";
+  runner.span.style.fontSize = event.target.value + "px";
 }
