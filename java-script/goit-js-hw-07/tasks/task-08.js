@@ -15,22 +15,33 @@
 // и выше предыдущего на 10px
 // Создай функцию destroyBoxes(), которая очищает div#boxes.
 
-const blockInput = document.querySelector(".blockInput");
-const block = document.querySelector(".block");
-const button = document.querySelector('[data-button="generate"]');
+const number = document.querySelector("[type=number]");
+const render = document.querySelector("[data-action=render]");
+const destroy = document.querySelector("[data-action=destroy]");
+const boxes = document.querySelector("#boxes");
 
-console.log(button);
+let input;
 
-const generateBlocks = () => {
-  const blocks = Number(blockInput.value); //3
-  let markup = "";
-  let x = 30;
-  for (let i = 1; i <= blocks; i += 1) {
-    x += 10;
-    markup += `<div class="square" style="width: ${x}px; height: ${x}px; border: 1px solid black; backgroundColor: red"></div>`;
+let createInput = (event) => {
+  input = number.value;
+  let width = 30;
+  let height = 30;
+  for (let i = 0; i < input; i++) {
+    newDiv = document.createElement("div");
+    newDiv.style.width = width + "px";
+    newDiv.style.height = height + "px";
+    let colorBox =
+      "#" + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6);
+    newDiv.style.backgroundColor = colorBox;
+    boxes.appendChild(newDiv);
+    width += 10;
+    height += 10;
   }
-  block.innerHTML = markup;
 };
 
-button.addEventListener("click", generateBlocks);
-blockInput.addEventListener("change", generateBlocks);
+render.addEventListener("click", createInput);
+
+const deleteInput = (event) => {
+  boxes.innerHTML = "";
+};
+destroy.addEventListener("click", deleteInput);
