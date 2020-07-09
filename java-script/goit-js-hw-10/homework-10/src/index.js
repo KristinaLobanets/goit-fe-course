@@ -19,16 +19,27 @@ const markUp = () => {
 };
 markUp();
 
+const theme = localStorage.getItem('Theme');
+
+if (theme === 'dark-theme') {
+  refs.body.classList.add(Theme.DARK);
+  refs.body.classList.remove(Theme.LIGHT);
+  refs.switchJs.checked = 'true';
+} else if (theme === 'light-theme') {
+  refs.body.classList.add(Theme.LIGHT);
+  refs.body.classList.remove(Theme.DARK);
+}
+
 const ThemeFunk = event => {
   if (event.target.checked === true) {
     refs.body.classList.add(Theme.DARK);
     refs.body.classList.remove(Theme.LIGHT);
-    storage.save('Theme', Theme.DARK);
+    localStorage.setItem('Theme', Theme.DARK);
   }
   if (event.target.checked === false) {
     refs.body.classList.add(Theme.LIGHT);
     refs.body.classList.remove(Theme.DARK);
-    storage.save('Theme', Theme.LIGHT);
+    localStorage.setItem('Theme', Theme.LIGHT);
   }
 };
 
