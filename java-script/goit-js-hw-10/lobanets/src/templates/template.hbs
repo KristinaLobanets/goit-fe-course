@@ -1,4 +1,3 @@
-{{!-- {{#each this}} --}}
 <li class="menu__item">
     <div class="card">
         <img src={{image}} alt={{name}} class="card__image" />
@@ -22,12 +21,11 @@
             </ul>
         </div>
 
-        <button class="card__button button">
-            <i class="material-icons button__icon">
+        <button class="card__button button" data-id="{{id}}" data-btn="cardButton">
+            <i class="material-icons button__icon" ">
                 shopping_cart
             </i>
             В корзину
         </button>
     </div>
 </li>
-{{!-- {{/each}} --}}
