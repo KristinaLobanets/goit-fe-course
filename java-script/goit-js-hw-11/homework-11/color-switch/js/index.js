@@ -17,7 +17,6 @@ const randomIntegerFromInterval = (min, max) => {
 
 let changeId = null;
 
-btnStart.addEventListener("click", changeColor);
 function changeColor() {
   changeId = setInterval(() => {
     body.style.backgroundColor =
@@ -25,9 +24,10 @@ function changeColor() {
   }, 1000);
   btnStart.disabled = true;
 }
+btnStart.addEventListener("click", changeColor);
 
-btnStop.addEventListener("click", stopRandom);
 function stopRandom() {
   clearInterval(changeId);
   btnStart.disabled = false;
 }
+btnStop.addEventListener("click", stopRandom);
