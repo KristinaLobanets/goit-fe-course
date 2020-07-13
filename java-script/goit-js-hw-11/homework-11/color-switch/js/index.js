@@ -1,4 +1,3 @@
-"use strict";
 const colors = [
   "#FFFFFF",
   "#2196F3",
@@ -8,36 +7,27 @@ const colors = [
   "#795548",
 ];
 
-const refs = {
-  start: document.querySelector('button[data-action="start"]'),
-  stop: document.querySelector('button[data-action="stop"]'),
-  body: document.querySelector("body"),
-};
+const btnStart = document.querySelector('button[data-action="start"]');
+const btnStop = document.querySelector('button[data-action="stop"]');
+const body = document.querySelector("body");
 
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
- const randomThemeIsActive = false;
+let changeId = null;
 
-const start() {
-  if (this.randomThemeIsActive === true) {
-    return;
-  }
-  this.timerId = setInterval(() => this.addBgColor(), 1000);
-},
-
-const stop() {
-  if (this.randomThemeIsActive === false) {
-    return;
-  }
-  clearInterval(this.timerId);
-  this.randomThemeIsActive = false;
+btnStart.addEventListener("click", changeColor);
+function changeColor() {
+  changeId = setInterval(() => {
+    body.style.backgroundColor =
+      colors[randomIntegerFromInterval(0, colors.length)];
+  }, 1000);
+  btnStart.disabled = true;
 }
 
-
-
-
-
-refs.start.addEventListener("click", changeStart);
-refs.stop.addEventListener("click", changeStop);
+btnStop.addEventListener("click", stopRandom);
+function stopRandom() {
+  clearInterval(changeId);
+  btnStart.disabled = false;
+}
