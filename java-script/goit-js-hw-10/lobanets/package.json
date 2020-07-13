@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KristinaLobanets/goit-fe-course/tree/master/java-script/goit-js-hw-10/lobanets"
+    "url": "git+https://github.com/luxplanjay/webpack-starter-kit.git"
   },
   "keywords": [],
   "author": "Lobanets Kristina <kristina.malitowska@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "hhttps://github.com/KristinaLobanets/goit-fe-course/tree/master/java-script/goit-js-hw-10/lobanets"
+    "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
   "homepage": "https://github.com/KristinaLobanets/goit-fe-course/tree/master/java-script/goit-js-hw-10/lobanets",
   "devDependencies": {
