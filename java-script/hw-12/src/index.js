@@ -25,7 +25,6 @@ const createMarkUp = array => {
     const myError = error({
       text: "I'm an error message.",
     });
-    refs.countryList.innerHTML = '';
   }
 };
 
