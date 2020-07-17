@@ -1,9 +1,12 @@
 // =============== import ===================
+import 'basiclightbox/dist/basicLightbox.min.css';
 import './styles.css';
 import { refs } from './js/refs';
 import { apiServiseceFunk, resetPage } from './js/apiService';
 import gallery from './templates/gallery.hbs';
 import { createMurkUp } from './js/markUp';
+// import * as basicLightbox from 'basiclightbox';
+const basicLightbox = require('basiclightbox');
 
 // ====================search====================
 
@@ -55,3 +58,19 @@ refs.scroll.addEventListener('click', scrollBtn);
 
 // ==========================================================
 // ==========================================================
+
+// ======================modalwindow==========================
+
+const modalWindow = event => {
+  if (event.target.nodeName === 'IMG') {
+    const instance = basicLightbox.create(`
+    <img src="${event.target.dataset.image}" width="800" height="600">
+`);
+    console.dir(event.target);
+    instance.show();
+  }
+};
+
+refs.galleryHTML.addEventListener('click', modalWindow);
+
+// ===============================================================
