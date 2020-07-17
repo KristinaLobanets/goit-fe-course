@@ -38,68 +38,103 @@ body {
 }
 
 .container {
-  width: 650px;
+  width: max-content;
   margin: 0 auto;
 }
 
-.title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input {
+#search-form {
   text-align: center;
   margin: 30px auto;
 }
 
-.input_country {
-  width: 400px;
-  height: 30px;
-  margin-bottom: 50px;
-}
-
-.card {
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
-}
-
-#country {
-  width: 650px;
+input {
+  width: 600px;
   height: 40px;
-  border: 2px solid #adabab;
+  border: 3px ridge #f1b979;
   border-radius: 5px;
+  outline: none;
+  box-shadow: 8px 8px 8px #6b6b69c0;
   padding: 0 10px;
 }
 
-.item_desc {
-  font-size: 25px;
-  margin-bottom: 20px;
+input:hover {
+  border: 3px solid #a56363;
 }
 
-.language_list {
-  list-style: disc;
-  padding-left: 30px;
+.image {
+  display: block;
+  border: 10px ridge #f1b979;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #9b9b99c0;
+  background-position: center;
+  margin: 0 auto 10px;
 }
 
-.language_list_item {
-  margin-bottom: 15px;
-  font-size: 25px;
+.stats {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.country_flag {
-  text-align: start;
-  border: 2px solid #adabab;
+.stats-item {
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
-.countries_list {
-  list-style: disc;
-  font-size: 25px;
-  margin: 0 0 20px 35px;
+.material-icons {
+  vertical-align: sub;
+}
+
+.scroll {
+  display: none;
+}
+
+.scroll_btn {
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #a56363;
+  box-shadow: 5px 5px 3px #9b9b99c0;
+  border-radius: 50%;
+  background-color: #f1b979;
+  outline: none;
+  cursor: pointer;
+}
+
+.js_btn {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px #a56363;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #9b9b99c0;
+  background-color: #f1b979;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto 40px;
+}
+
+.hdn {
+  opacity: 0;
+}
+
+.hdn_btn {
+  opacity: 1;
+}
+
+.js_btn:hover .scroll {
+  background-color: #a56363;
 }
