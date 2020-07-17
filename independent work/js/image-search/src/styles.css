@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.container {
+  width: max-content;
+  margin: 0 auto;
+}
+
+#search-form {
+  text-align: center;
+  margin: 30px auto;
+}
+
+input {
+  width: 600px;
+  height: 40px;
+  border: 3px ridge #f1b979;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 8px 8px 8px #6b6b69c0;
+  padding: 0 10px;
+}
+
+input:hover {
+  border: 3px solid #a56363;
+}
+
+.image {
+  display: block;
+  border: 10px ridge #f1b979;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #9b9b99c0;
+  background-position: center;
+  margin: 0 auto 10px;
+}
+
+.stats {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.stats-item {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.material-icons {
+  vertical-align: sub;
+}
+
+.scroll {
+  display: none;
+}
+
+.scroll_btn {
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #a56363;
+  box-shadow: 5px 5px 3px #9b9b99c0;
+  border-radius: 50%;
+  background-color: #f1b979;
+  outline: none;
+  cursor: pointer;
+}
+
+.js_btn {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px #a56363;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #9b9b99c0;
+  background-color: #f1b979;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto 40px;
+}
+
+.hdn {
+  opacity: 0;
+}
+
+.hdn_btn {
+  opacity: 1;
+}
+
+.js_btn:hover .scroll {
+  background-color: #a56363;
+}
