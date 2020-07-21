@@ -1,5 +1,6 @@
 import navigation from './components/navigation';
 import './styles.css';
+// import axios from 'axios';
 
 const elements = ['Home', 'About', 'Contacts', 'Products', 'Cart'];
 const sidebar = ['TV', 'Toys', 'Weapon', 'Tools'];
