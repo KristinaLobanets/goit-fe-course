@@ -12,7 +12,8 @@ export const apiServiseceFunk = search => {
     .then(res => {
       pageNumber += 1;
       return res;
-    });
+    })
+    .catch(error => console.log(error));
 };
 
 export const resetPage = () => {
