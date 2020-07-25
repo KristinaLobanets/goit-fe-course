@@ -1,4 +1,4 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 
@@ -137,4 +137,4 @@ input:hover {
 
 .js_btn:hover .scroll {
   background-color: #a56363;
-} */
+}
