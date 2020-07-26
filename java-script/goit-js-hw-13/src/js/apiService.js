@@ -1,5 +1,5 @@
 const apiKey = '17504115-e1f4917cce04b285bef9ea485';
-const baseUrl = 'https://pixabay.com/api';
+const baseUrl = 'https://pixabay.com/api/';
 let pageNumber = 1;
 export const apiServiseceFunk = search => {
   return fetch(
