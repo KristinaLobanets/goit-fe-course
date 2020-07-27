@@ -145,6 +145,7 @@ li {
   .team-item-photo {
     width: 96px;
     height: 96px;
+    border-radius: 70px;
 
   }
   
@@ -191,6 +192,8 @@ li {
   .team-item-photo {
     width: 160px;
     height: 160px;
+    border-radius: 90px;
+    border: 4px solid white;
 
   }
   
