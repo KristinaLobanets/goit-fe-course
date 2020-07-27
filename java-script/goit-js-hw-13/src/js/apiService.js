@@ -4,9 +4,6 @@ let pageNumber = 1;
 export const apiServiseceFunk = search => {
   return fetch(
     `${baseUrl}?image_type=photo&orientation=horizontal&q=${search}&page=${pageNumber}&per_page=5&key=${apiKey}`,
-    {
-      credentials: 'same-origin',
-    },
   )
     .then(res => {
       return res.json();
