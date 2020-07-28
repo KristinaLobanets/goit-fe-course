@@ -15,13 +15,13 @@ img {
   max-width: 100%;
 }
 
-.team-list {
+.team__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.team-item {
+.team__item {
   display: flex;
   justify-content: space-around;
   width: 220px;
@@ -34,18 +34,18 @@ img {
   border-radius: 10px;
 }
 
-.team-item-person {
+.team__item__person {
   display: block;
   position: relative;
   margin: auto;
 }
 
-.team-item-info {
+.team__item__info {
   width: 177px;
   margin-left: 10px;
 }
 
-.team-item-photo {
+.team__item__photo {
   width: 85px;
   height: 86px;
   border-radius: 50px;
@@ -53,7 +53,7 @@ img {
   margin: 15px 15px 15px 15px;
 }
 
-.team-item-title {
+.team__item__title {
   display: flex;
   align-items: center;
   font-family: Montserrat Alternates;
@@ -66,7 +66,7 @@ img {
   margin-bottom: 15px;
 }
 
-.team-item-text {
+.team__item__text {
   display: flex;
   align-items: center;
   font-family: Montserrat Alternates;
@@ -91,36 +91,36 @@ img {
     margin: 0 auto;
   }
 
-  .team-item {
+  .team__item {
     width: 314px;
     height: 161px;
     margin: 20px 20px 20px 20px;
   }
 
-  .team-item-info {
+  .team__item__info {
     width: 198px;
     margin-left: 30px;
   }
 
-  .team-item-person {
+  .team__item__person {
     margin-left: 15px;
     margin-top: 15px;
   }
 
-  .team-item-photo {
+  .team__item__photo {
     width: 96px;
     height: 96px;
     border-radius: 70px;
   }
 
-  .team-item-title {
+  .team__item__title {
     font-size: 26px;
     line-height: 32px;
     margin-top: 90px;
     margin-top: 15px;
   }
 
-  .team-item-text {
+  .team__item__text {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 40px;
@@ -133,36 +133,36 @@ img {
     margin: 0 auto;
   }
 
-  .team-item {
+  .team__item {
     width: 525px;
     height: 270px;
     margin: 30px 30px 30px 30px;
   }
 
-  .team-item-info {
+  .team__item__info {
     width: 310px;
     margin-left: 30px;
   }
 
-  .team-item-person {
+  .team__item__person {
     margin-left: 55px;
     margin-top: 55px;
   }
 
-  .team-item-photo {
+  .team__item__photo {
     width: 160px;
     height: 160px;
     border-radius: 90px;
   }
 
-  .team-item-title {
+  .team__item__title {
     font-size: 26px;
     line-height: 32px;
     margin-top: 90px;
     margin-bottom: 15px;
   }
 
-  .team-item-text {
+  .team__item__text {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 90px;
