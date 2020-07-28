@@ -9,7 +9,6 @@ li {
   list-style: none;
 }
 .container {
-  position: relative;
 }
 .header {
   background-color: #53535c;
@@ -20,11 +19,10 @@ li {
 }
 
 .header__logo {
-  position: absolute;
   width: 40px;
   height: 40px;
-  left: 100px;
-  top: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
   background: linear-gradient(57.07deg, #6368e5 5.81%, #b884f3 91.96%);
   border-radius: 50px;
 }
@@ -34,10 +32,7 @@ li {
   display: block;
   width: 29px;
   height: 29px;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  background-position: center center;
+  margin-left: 10px;
   background-repeat: no-repeat;
   border-radius: 50px;
   background-color: #53535c;
@@ -48,7 +43,7 @@ li {
   display: block;
   width: 33px;
   height: 33px;
-  position: absolute;
+
   right: 5px;
   bottom: 0;
   background-position: center center;
