@@ -11,6 +11,7 @@ li {
 
 .container {
 }
+
 .header {
   background-color: #53535c;
   height: 60px;
@@ -100,9 +101,8 @@ li {
   .header__logo {
     display: flex;
   }
-  .header__phone {
+  .phone {
     display: flex;
-    /* flex-wrap: nowrap; */
   }
 
   .header__tablet {
@@ -120,7 +120,7 @@ li {
     margin: 0 auto;
   }
 
-  .header__phone {
+  .phone {
     display: none;
   }
 
@@ -139,7 +139,7 @@ li {
     margin: 0 auto;
   }
 
-  .header__phone {
+  .phone {
     display: none;
   }
 

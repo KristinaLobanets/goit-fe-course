@@ -7,6 +7,7 @@
     <title>header</title>
   </head>
   <body class="container">
+    <div class="phone">
     <header class="header">
       <ul class="header__nav">
         <li class="header__nav__input"><a class="header__logo"></a></li>
@@ -50,16 +51,51 @@
           </a>
         </li>
       </ul>
-      <!-- 
+    </div>
+
       <div class="header__tablet">
-        <a class="header__logo">tab</a>
-        <div class="header__centre">
-          <a class="header__phone"></a>
-          <a class="header__search"></a>
-          <a class="header__card"></a>
-        </div>
-        <a class="header__menu"></a>
-      </div>
+        <ul class="header__nav">
+          <li class="header__nav__input"><a class="header__logo"></a></li>
+          <li class="header__nav__input">
+            <a class="header__phone">
+              <svg class="nav__icon" width="30px" height="30px">
+                <use
+                  href="./svg/vector/sprite.svg#icon-search-white"
+                  class="navigation__item--icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav__input">
+            <a class="header__search">
+              <svg class="nav__icon" width="30px" height="30px">
+                <use
+                  href="./svg/vector/sprite.svg#icon-search-white"
+                  class="navigation__item--icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav__input">
+            <a class="header__cart">
+              <svg class="nav__icon" width="30px" height="30px">
+                <use
+                  href="./svg/vector/sprite.svg#icon-SHOPPING-CART"
+                  class="navigation__item--icon"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__nav__input">
+            <a class="header__menu">
+              <div class="header__menu__block">
+                <span class="header__menu__item"></span>
+                <span class="header__menu__item"></span>
+                <span class="header__menu__item"></span>
+              </div>
+            </a>
+          </li>
+        </ul>
 
       <div class="header__desktop">
         <a class="header__logo">desk</a>
@@ -72,7 +108,7 @@
         <a class="header__like"></a>
         <a class="header__person"></a>
         <a class="header__card"></a>
-      </div> -->
+      </div>
     </header>
   </body>
 </html>
