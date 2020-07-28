@@ -7,10 +7,10 @@
     <title>header</title>
   </head>
   <body class="container">
-    <header class="header container">
-      <div class="header__phone">
-        <a class="header__logo"></a>
-        <div class="header__centre">
+    <header class="header">
+      <ul class="header__nav">
+        <li class="header__nav__input"><a class="header__logo"></a></li>
+        <li class="header__nav__input">
           <a class="header__phone">
             <svg class="nav__icon" width="30px" height="30px">
               <use
@@ -19,6 +19,8 @@
               ></use>
             </svg>
           </a>
+        </li>
+        <li class="header__nav__input">
           <a class="header__search">
             <svg class="nav__icon" width="30px" height="30px">
               <use
@@ -27,6 +29,8 @@
               ></use>
             </svg>
           </a>
+        </li>
+        <li class="header__nav__input">
           <a class="header__cart">
             <svg class="nav__icon" width="30px" height="30px">
               <use
@@ -35,10 +39,12 @@
               ></use>
             </svg>
           </a>
-        </div>
-        <div class="header__menu"></div>
-      </div>
-
+        </li>
+        <li class="header__nav__input">
+          <div class="header__menu"></div>
+        </li>
+      </ul>
+      <!-- 
       <div class="header__tablet">
         <a class="header__logo">tab</a>
         <div class="header__centre">
@@ -60,7 +66,7 @@
         <a class="header__like"></a>
         <a class="header__person"></a>
         <a class="header__card"></a>
-      </div>
+      </div> -->
     </header>
   </body>
 </html>

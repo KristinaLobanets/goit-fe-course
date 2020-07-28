@@ -8,14 +8,21 @@ ul,
 li {
   list-style: none;
 }
+
 .container {
 }
 .header {
   background-color: #53535c;
   height: 60px;
 }
-.header__centre {
-  justify-content: center;
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__nav__input {
+  width: 80px;
+  height: 60px;
 }
 
 .header__logo {
@@ -23,6 +30,7 @@ li {
   height: 40px;
   margin-top: 10px;
   margin-left: 20px;
+
   background: linear-gradient(57.07deg, #6368e5 5.81%, #b884f3 91.96%);
   border-radius: 50px;
 }
@@ -38,12 +46,25 @@ li {
   background-color: #53535c;
 }
 
+.header__phone {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.header__phone {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
 .header__card::after {
   content: "";
   display: block;
   width: 33px;
   height: 33px;
-
   right: 5px;
   bottom: 0;
   background-position: center center;
@@ -61,7 +82,14 @@ li {
 }
 .nav__icon {
   margin: 15px 15px 15px 15px;
-  fill: rgb(255, 255, 255);
+  /* fill: rgb(255, 255, 255); */
+}
+
+.header__menu {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background: #ffc390;
 }
 
 @media (min-width: 320px) and (max-width: 799px) {
@@ -69,10 +97,12 @@ li {
     width: 100%;
     margin: 0 auto;
   }
+  .header__logo {
+    display: flex;
+  }
   .header__phone {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    /* flex-wrap: nowrap; */
   }
 
   .header__tablet {
