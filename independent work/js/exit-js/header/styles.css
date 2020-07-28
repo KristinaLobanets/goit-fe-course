@@ -27,18 +27,16 @@ li {
   top: 10px;
   background: linear-gradient(57.07deg, #6368e5 5.81%, #b884f3 91.96%);
   border-radius: 50px;
-  border: 4px solid;
-  border-color: white;
 }
 
 .header__logo::after {
   content: "";
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 29px;
+  height: 29px;
   position: absolute;
-  left: 8px;
-  bottom: 8px;
+  left: 10px;
+  bottom: 10px;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50px;
