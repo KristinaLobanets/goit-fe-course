@@ -7,45 +7,60 @@
     <title>header</title>
   </head>
   <body class="container">
-    <header class="header">
+    <header class="header container">
       <div class="header__phone">
         <a class="header__logo"></a>
         <div class="header__centre">
-          <a class="header__phone"
-            ><svg class="header__phone__svg" width="20px" height="20px">
+          <a class="header__phone">
+            <svg class="nav__icon" width="30px" height="30px">
               <use
-                href="./image/Vector.png"
-                class="header__phone__svg__item"
+                href="./svg/vector/sprite.svg#icon-search-white"
+                class="navigation__item--icon"
               ></use>
             </svg>
           </a>
-          <a class="header__search"></a>
-          <a class="header__card"></a>
+          <a class="header__search">
+            <svg class="nav__icon" width="30px" height="30px">
+              <use
+                href="./svg/vector/sprite.svg#icon-search-white"
+                class="navigation__item--icon"
+              ></use>
+            </svg>
+          </a>
+          <a class="header__cart">
+            <svg class="nav__icon" width="30px" height="30px">
+              <use
+                href="./svg/vector/sprite.svg#icon-SHOPPING-CART"
+                class="navigation__item--icon"
+              ></use>
+            </svg>
+          </a>
         </div>
         <div class="header__menu"></div>
       </div>
 
-      <!-- <div class="header__tablet">
-        <a class="header__logo"></a>
+      <div class="header__tablet">
+        <a class="header__logo">tab</a>
         <div class="header__centre">
-        <a class="header__phone"></a>
-        <a class="header__search"></a>
-        <a class="header__card"></a></div>
-        <a class="header__menu"></a></div>
-
-  
-        <div class="header__desktop">
-          <a class="header__logo"></a>
           <a class="header__phone"></a>
-          <a class="header__katalog">Каталог</a>
-          <a class="header__sale">Sale%г</a>
-          <a class="header__info">Информация</a>
-          <a class="header__contact">Контакты</a>
           <a class="header__search"></a>
-          <a class="header__like"></a>
-          <a class="header__person"></a>
           <a class="header__card"></a>
-         </div> -->
+        </div>
+        <a class="header__menu"></a>
+      </div>
+
+      <div class="header__desktop">
+        <a class="header__logo">desk</a>
+        <a class="header__phone"></a>
+        <a class="header__katalog">Каталог</a>
+        <a class="header__sale">Sale%г</a>
+        <a class="header__info">Информация</a>
+        <a class="header__contact">Контакты</a>
+        <a class="header__search"></a>
+        <a class="header__like"></a>
+        <a class="header__person"></a>
+        <a class="header__card"></a>
+      </div>
     </header>
   </body>
 </html>
